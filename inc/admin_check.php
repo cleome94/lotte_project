@@ -3,7 +3,7 @@ if(!$s_idx || $s_id!="admin"){
     echo "
         <script type=\"text/javascript\">
             alert(\"관리자 로그인이 필요합니다.\");
-            location.href=\" 장소 집어 넣기 \";
+            location.href=\"http://localhost/project/login_김서영.html\";
         </script>
     ";
     exit;

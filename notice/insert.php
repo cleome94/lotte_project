@@ -24,7 +24,7 @@ mysqli_query($dbcon, $sql);
 mysqli_close($dbcon);
 echo "
     <script type=\"text/javascript\">
-        location.href=\"list.php\";
+        location.href=\"../notice_김서영.php\";
     </script>
     ";
 ?>

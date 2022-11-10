@@ -1,6 +1,6 @@
 <?php
-include "../project/inc/session.php";
-include "../project/inc/dbcon.php";
+include "inc/session.php";
+include "inc/dbcon.php";
 $sql = "select * from notice;";
 $result = mysqli_query($dbcon, $sql);
 $total = mysqli_num_rows($result);
@@ -293,11 +293,12 @@ if($e_pageNum > $total_page){
         <div class="tab1_cont" id="tab1_cont">
             <h3 class="blind">전체 공지</h3>
             <?php if($s_id == "admin"){ ?>
-            <p class="total"><span>전체<em> <?php echo $total; ?></em>건</span>
-            <span><a class="write" href="notice/write.php">[글쓰기]</a></span>
+            <p class="total">
+                <span>전체<em> <?php echo $total; ?></em>건</span>
+                <span><a class="write" href="notice/write.php">[글쓰기]</a></span>
             </p>
             <?php } else{ ?>
-                <p class="total">전체<span> <?php echo $total; ?></span>건</p>
+                <p class="total">전체<em> <?php echo $total; ?></em>건</p>
             <?php }; ?>
             <div class="search_bg">
                 <fieldset class="search_wrap">
@@ -351,21 +352,21 @@ if($e_pageNum > $total_page){
             <?php
             if($page <= 1){
             ?>
-            <a href="list.php?page=1">이전</a>
+            <a class="btn_prev" href="notice_김서영.php?page=1">이전</a>
             <?php } else{ ?>
-            <a href="list.php?page=<?php echo ($page -1); ?>">이전</a>
+            <a class="btn_prev" href="notice_김서영.php?page=<?php echo ($page -1); ?>">이전</a>
             <?php }; ?>
             <?php
             for($print_page = $s_pageNum; $print_page <= $e_pageNum; $print_page++){
             ?>
-            <a href="list.php?page=<?php echo $print_page; ?>"><?php echo $print_page; ?></a>
+            <a href="notice_김서영.php?page=<?php echo $print_page; ?>"><?php echo $print_page; ?></a>
             <?php }; ?>
             <?php
             if($page >= $total_page){
             ?>
-            <a href="list.php?page=<?php echo $e_pageNum; ?>">다음</a>
+            <a class="btn_pg_next" href="notice_김서영.php?page=<?php echo $e_pageNum; ?>">다음</a>
             <?php } else{ ?>
-            <a href="list.php?page=<?php echo ($page +1); ?>">다음</a>
+            <a href="notice_김서영.php?page=<?php echo ($page +1); ?>">다음</a>
             <?php }; ?>
             </p>
             <div class="pasing">
@@ -381,13 +382,20 @@ if($e_pageNum > $total_page){
                     <li><a href="#">9</a></li>
                     <li><a href="#">10</a></li>
                 </ul>
-                <button type="button" class="btn_pg_next">></button>
-                <button type="button" class="btn_pg_end">⨠</button>
+                <button type="button" class="btn_next">></button>
+                <button type="button" class="btn_end">⨠</button>
             </div>
         </div>
         <div class="tab2_cont">
             <h3 class="blind">영화관 공지</h3>
-            <p class="total">전체<span> 000</span>건</p>
+            <?php if($s_id == "admin"){ ?>
+            <p class="total">
+                <span>전체<em> <?php echo $total; ?></em>건</span>
+                <span><a class="write" href="notice/write.php">[글쓰기]</a></span>
+            </p>
+            <?php } else{ ?>
+                <p class="total">전체<em> <?php echo $total; ?></em>건</p>
+            <?php }; ?>
             <div class="search_bg">
                 <fieldset class="search_wrap">
                     <select id="movieArea" onchange="categoryChange(this)">

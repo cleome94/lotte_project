@@ -732,6 +732,12 @@ td{
     margin-top:30px;
     margin-left:406px
 }
+.pager{
+    font-size:14px;
+    font-weight:bold;
+    margin-top:30px;
+    text-align:center;
+}
 .pasing ul li{
     float:left;
     margin-right:14px
@@ -742,7 +748,14 @@ td{
     border:none;
     cursor:pointer
 }
-.btn_pg_next{
+.btn_prev{
+    display:block;
+    width:20px;
+    height:20px;
+    background:url(../images/notice/prev.png) no-repeat;
+    text-indent:-9999px
+}
+.btn_next{
     display:block;
     width:20px;
     height:20px;
@@ -750,7 +763,7 @@ td{
     text-indent:-9999px;
     float:left
 }
-.btn_pg_end{
+.btn_end{
     display:block;
     width:20px;
     height:20px;

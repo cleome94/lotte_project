@@ -9,7 +9,7 @@ $array = mysqli_fetch_array($result);
 mysqli_close($dbcon);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,7 +40,7 @@ mysqli_close($dbcon);
     </script>
 </head>
 <body>
-    <form name="notice_form" action="edit.php?n_idx=<?php echo $n_idx; ?>" method="post" onsubmit="return notice_check()">
+<form name="notice_form" action="edit.php?n_idx=<?php echo $n_idx; ?>" method="post" onsubmit="return notice_check()">
         <fieldset>
             <legend>공지사항</legend>
             <p>

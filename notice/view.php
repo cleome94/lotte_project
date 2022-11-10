@@ -16,7 +16,7 @@ exit; */
 mysqli_query($dbcon, $sql);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,6 +37,13 @@ mysqli_query($dbcon, $sql);
         .notice_content_title{text-align:left;padding:left;}
 
         table a:hover{color:rgb(255, 128, 0)}
+        <?php if($s_id == "admin"){ ?>
+        .write_area{
+            width:1000px;
+            display:flex;
+            flex-direction:row-reverse
+        }
+        <?php }; ?>
     </style>
     <script>
         function remove_notice(){
@@ -82,7 +89,7 @@ mysqli_query($dbcon, $sql);
         </tr>
     </table>
     <p class="list">
-        <a href="list.php">[목록]</a>
+        <a href="../notice_김서영.php">[목록]</a>
         <?php if($s_id == "admin"){ ?>
         <a href="modify.php?n_idx=<?php echo $n_idx; ?>">[수정]</a>
         <a href="#" onclick="remove_notice()">[삭제]</a>
