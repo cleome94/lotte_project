@@ -88,18 +88,18 @@ bx-wrapper {
   line-height: 0;
 }
 /* DIRECTION CONTROLS (NEXT / PREV) */
-.bx-wrapper .bx-prev {
+/* .bx-wrapper .bx-prev {
   left: -100px;
   background: url('../images/main_image_prev.png') no-repeat;
-}
+} */
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
   background-position: 0 0;
 }
-.bx-wrapper .bx-next {
+/* .bx-wrapper .bx-next {
   right: -100px;
   background: url('../images/main_image_next.png') no-repeat;
-}
+} */
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
   top: 45%;

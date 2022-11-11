@@ -45,7 +45,8 @@
     border:2px solid#d32f2f;
     border-radius:6px;
     font-size:16px;
-    position:relative
+    position:relative;
+    color:#383838;
 }
 .form1_box1{
     width:478px;
@@ -64,7 +65,8 @@
 .fc1{
     position:relative;
     top:-4px;
-    font-weight:bold
+    font-weight:500;
+    color:#000
 }
 .form1_box2{
     width:478px;
@@ -212,7 +214,7 @@ input[type="checkbox"]:checked {
     border:2px solid#d32f2f;
     border-radius:6px;
     font-size:16px;
-    font-weight:bold;
+    font-weight:500;
     color:#383838;
     position:relative
 }
@@ -301,7 +303,6 @@ input[type="checkbox"]:checked {
 }
 .form2_n5{
     position:relative;
-    font-weight:bold;
     left:-5px
 }
 .birth{
@@ -313,7 +314,6 @@ input[type="checkbox"]:checked {
 }
 .form2_n6{
     position:relative;
-    font-weight:bold;
     left:-5px
 }
 .phone_no{
@@ -325,7 +325,7 @@ input[type="checkbox"]:checked {
     background:rgb(248, 248, 248);
 }
 .phone1{
-    width:104px;
+    width:105px;
     height:42px;
     border-radius:6px;
     border:1px solid#000
@@ -337,34 +337,38 @@ input[type="checkbox"]:checked {
     border:1px solid#000
 }
 .phone3{
-    width:166px;
+    width:170px;
     height:38px;
     border-radius:6px;
     border:1px solid#000;
+    position:relative;
+    top:1px
 }
 .an{
     position:relative;
     top:-52px;
-    left:595px
+    left:585px
 }
 .an_btn{
-    width:105px;
-    height:38px;
+    width:100px;
+    height:42px;
     border-radius:6px;
     background:#fff;
     border:1px solid#000;
     color:#d32f2f;
     font-weight:bold;
-    margin-top:3px;
+    position:relative;
+    top:1px;
     cursor:pointer
 }
 .ean{
-    width:230px;
-    height:38px
+    width:242px;
+    height:38px;
+    margin-top:3px;
 }
 .cer2{
     font-size:14px;
-    font-weight:bold;
+    font-weight:500;
     text-align:center;
     margin-top:-37px
 }
@@ -379,7 +383,7 @@ input[type="checkbox"]:checked {
     background:#3f3f3f;
     border:none;
     font-size:20px;
-    font-weight:bold;
+    font-weight:500;
     color:#fff;
     cursor:pointer;
     margin-top:72px;
@@ -393,7 +397,7 @@ input[type="checkbox"]:checked {
     box-sizing:border-box;
     border:none;
     font-size:20px;
-    font-weight:bold;
+    font-weight:500;
     color:#fff;
     cursor:pointer;
     margin-left:20px
@@ -418,11 +422,16 @@ input[type="checkbox"]:checked {
 .family_site1{
     width:160px;
     height:40px;
-    border:2px solid#000;
+    border:1px solid#000;
     box-sizing:border-box;
     margin-left:695px;
     margin-top:-39px;
-    position:relative
+    position:relative;
+    cursor:pointer
+}
+.family_site1 h4{
+    position:relative;
+    top:-4px
 }
 .family_site1 h4 span{
     display:block;
@@ -433,8 +442,8 @@ input[type="checkbox"]:checked {
 }
 .family_site1 ul{
     position:relative;
-    top:-164px;
-    left:-2px;
+    top:-178px;
+    left:-1px;
     border:1px solid#000;
     width:160px;
     box-sizing:border-box;
@@ -451,11 +460,16 @@ input[type="checkbox"]:checked {
 .family_site2{
     width:160px;
     height:40px;
-    border:2px solid#000;
+    border:1px solid#000;
     box-sizing:border-box;
     margin-top:-40px;
     margin-left:865px;
-    position:relative
+    position:relative;
+    cursor:pointer
+}
+.family_site2 h4{
+    position:relative;
+    top:-4px
 }
 .family_site2 h4 span{
     display:block;
@@ -466,8 +480,8 @@ input[type="checkbox"]:checked {
 }
 .family_site2 ul{
     position:relative;
-    margin-top:-254px;
-    margin-left:-2px;
+    margin-top:-256px;
+    margin-left:-1px;
     border:1px solid#000;
     width:160px;
     box-sizing:border-box;

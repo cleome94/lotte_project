@@ -12,8 +12,7 @@
     z-index:20
 }
 .header{
-    border-top:1px solid rgb(255, 255, 255);
-    font-weight:bold
+    border-top:1px solid rgb(255, 255, 255)
 }
 .logo{
     width:225px;
@@ -30,7 +29,7 @@
 .gnb{
     width:1000px;
     margin:0 auto;
-    border-top:1px solid#000;
+    border-top: 1px solid #000
 }
 .gnb a:hover{
     color:#d32f2f;
@@ -43,7 +42,7 @@
 }
 .gnb_menu_wrap{
     width:1000px;
-    border-bottom:1px solid#afafaf;
+    border-bottom:1px solid#d66d6d;
     display:flex
 }
 .gnb_menu1{
@@ -52,10 +51,9 @@
 }
 .gnb_menu1 a{
     font-size:20px;
-    font-weight:lighter;
     float:left;
     display:block;
-    padding:20px 30px;
+    padding:20px 30px
 }
 .gnb_menu1 ul{
     position:absolute;
@@ -67,17 +65,17 @@
 }
 .gnb_ticket a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 .gnb_menu2{
-    position:relative;
+    position:relative
 }
 .gnb_menu2 a{
     font-size:20px;
-    font-weight:lighter;
     float: left;
     display:block;
-    padding:20px 30px;
+    padding:20px 30px
 }
 .gnb_menu2 ul{
     position:absolute;
@@ -89,17 +87,17 @@
 }
 .gnb_movie a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 .gnb_menu3{
-    position:relative;
+    position:relative
 }
 .gnb_menu3 a{
     font-size:20px;
-    font-weight:lighter;
     float: left;
     display:block;
-    padding:20px 30px;
+    padding:20px 30px
 }
 .gnb_menu3 ul{
     position:absolute;
@@ -111,17 +109,17 @@
 }
 .gnb_cinema a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 .gnb_menu4{
-    position:relative;
+    position:relative
 }
 .gnb_menu4 a{
     font-size:20px;
-    font-weight:lighter;
-    float: left;
+    float:left;
     display:block;
-    padding:20px 30px;
+    padding:20px 30px
 }
 .gnb_menu4 ul{
     position:absolute;
@@ -133,17 +131,17 @@
 }
 .gnb_event a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 .gnb_menu5{
-    position:relative;
+    position:relative
 }
 .gnb_menu5 a{
     font-size:20px;
-    font-weight:lighter;
     float:left;
     display:block;
-    padding:20px 30px;
+    padding:20px 30px
 }
 .gnb_menu5 ul{
     position:absolute;
@@ -155,6 +153,7 @@
 }
 .gnb_store a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 
@@ -165,7 +164,7 @@
     background:url(../images/login/tap_menu.png) no-repeat;
     text-indent:-9999px;
     float:right;
-    margin-top:-45px;
+    margin-top:-40px;
     margin-left:170px;
     cursor:pointer
 }
@@ -182,8 +181,8 @@
     position:absolute;
     margin:auto;
     margin-left:-200px;
-    top:134px;
-    z-index:20;
+    top:138px;
+    z-index:11;
     display:none
 }
 .mt{
@@ -207,7 +206,7 @@
 .mm{
     float:left;
     margin-top:41px;
-    margin-left:50px
+    margin-left:60px
 }
 .main_movie{
     font-size:16px;
@@ -224,7 +223,7 @@
 .mc{
     float:left;
     margin-top:41px;
-    margin-left:50px
+    margin-left:60px
 }
 .main_cinema{
     font-size:16px;
@@ -241,8 +240,7 @@
 .msc{
     float:left;
     margin-top:41px;
-    margin-left:385px;
-
+    margin-left:385px
 }
 .main_special{
     font-size:16px;
@@ -311,7 +309,7 @@
 .mcs{
     float:left;
     margin-top:370px;
-    margin-left:-870px
+    margin-left:-850px
 }
 .main_cs{
     font-size:16px;
@@ -328,7 +326,7 @@
 .me{
     float:left;
     margin-top:370px;
-    margin-left:-750px
+    margin-left:-730px
 }
 .main_event{
     font-size:16px;
@@ -345,7 +343,7 @@
 .mem{
     float:left;
     margin-top:370px;
-    margin-left:-298px
+    margin-left:-278px
 }
 .main_mem{
     font-size:16px;
@@ -401,7 +399,7 @@
     text-indent:-9999px;
     position:absolute;
     margin-top:-60px;
-    margin-left:-40px;
+    margin-left:-20px;
     cursor:pointer
 }
 .log_wrap{
@@ -504,12 +502,12 @@
     width:1000px;
     margin:auto;
     position:relative;
-    margin-top:-143px;
+    margin-top:-145px;
     font-size:12px
 }
 .top_menu1{
     width:108px;
-    margin-top:48px
+    margin-top:47px
 }
 .top_menu1 a{
     display:block;
@@ -521,7 +519,7 @@
 }
 .top_menu2{
     width:136px;
-    margin-top:-23px;
+    margin-top:-22px;
     margin-left:110px;
 }
 .top_menu2 a{
@@ -532,6 +530,7 @@
     text-indent:-9999px
 }
 .top_menu_right{
+    font-weight:500;
     float:right;
     position:relative;
     top:-90px
@@ -562,7 +561,7 @@
 }
 .sns{
     width:1000px;
-    margin:auto
+    margin:auto;
 }
 .sns1 a{
     display:block;
@@ -572,7 +571,7 @@
     text-indent:-9999px;
     float:left;
     position:relative;
-    top:-42px
+    top:-40px
 }
 .sns2 a{
     display:block;
@@ -583,7 +582,7 @@
     float:left;
     position:relative;
     left:20px;
-    top:-42px
+    top:-40px
 }
 .sns3 a{
     display:block;
@@ -594,7 +593,7 @@
     float:left;
     position:relative;
     left:40px;
-    top:-42px
+    top:-40px
 }
 .main_bg{
     clear:both;
@@ -614,8 +613,6 @@
     top:135px;
     width:1000px;
     margin:0 auto;
-    font-size:20px;
-    font-weight:bold;
     margin-top:20px;
     background:#fff;
     height:62px
@@ -624,7 +621,7 @@
     float:left;
     width:250px;
     height:60px;
-    font-size:20px;
+    font-size:16px;
     border:none;
     background:#fff;
     cursor:pointer
@@ -647,18 +644,26 @@
 }
 .best_bg{
     width:100%;
-    height:62px;
+    height:40px;
     background:#d32f2f;
     margin-top:20px
 }
 .best h2{
     width:1000px;
     margin:auto;
-    margin-top:-50px;
-    margin-bottom:75px
+    margin-top:-35px;
+    margin-bottom:60px;
+    font-size:20px;
+    font-weight:500;
 }
 .best a{
     color:#fff
+}
+.best h3{
+    font-size:16px;
+    font-weight:400;
+    text-align:center;
+    margin-bottom:3px
 }
 .best1 a{
     display:block;
@@ -677,11 +682,6 @@
     margin-right:143px;
     cursor:pointer
 }
-.best1 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:3px
-}
 .cont1{
     font-size:12px;
     color:#6f6f6f;
@@ -698,7 +698,7 @@
 }
 .txt_price{
     font-size:18px;
-    font-weight:bold;
+    font-weight:400;
     text-align:center
 }
 .txt_price_ins{
@@ -722,11 +722,6 @@
     margin-right:143px;
     cursor:pointer
 }
-.best2 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:3px
-}
 .best3 a{
     display:block;
     width:228px;
@@ -741,11 +736,6 @@
     box-sizing:border-box;
     float:left;
     cursor:pointer
-}
-.best3 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:3px
 }
 .best4 a{
     display:block;
@@ -764,11 +754,6 @@
     margin-right:143px;
     cursor:pointer
 }
-.best4 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:3px
-}
 .best5 a{
     display:block;
     width:228px;
@@ -786,11 +771,6 @@
     margin-right:143px;
     cursor:pointer
 }
-.best5 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:3px
-}
 .best6 a{
     display:block;
     width:228px;
@@ -806,11 +786,6 @@
     float:left;
     margin-top:29px;
     cursor:pointer
-}
-.best6 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:3px
 }
 .best7 a{
     display:block;
@@ -829,11 +804,6 @@
     margin-bottom:50px;
     cursor:pointer
 }
-.best7 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:3px
-}
 #ticket{
     position:relative;
     top:-259px;
@@ -845,14 +815,22 @@
 .ticket_bg{
     clear:both;
     width:100%;
-    height:62px;
+    height:40px;
     background:#d32f2f
 }
 .ticket h2{
     width:1000px;
     margin:auto;
-    margin-top:-50px;
-    margin-bottom:75px
+    margin-top:-35px;
+    margin-bottom:60px;
+    font-size:20px;
+    font-weight:500;
+}
+.ticket h3{
+    font-size:16px;
+    font-weight:400;
+    text-align:center;
+    margin-bottom:3px
 }
 .ticket a{
     color:#fff;
@@ -873,11 +851,6 @@
     margin-right:143px;
     cursor:pointer
 }
-.ticket1 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:3px
-}
 .ticket2 a{
     display:block;
     width:228px;
@@ -895,10 +868,7 @@
     cursor:pointer
 }
 .ticket2 h3{
-    font-size:16px;
-    text-align:center;
     margin-top:-20px;
-    margin-bottom:3px
 }
 .ticket2 p{
     line-height:14px;
@@ -919,11 +889,6 @@
     margin-bottom:50px;
     cursor:pointer
 }
-.ticket3 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:3px
-}
 .pc{
     width:1000px;
     margin:0 auto
@@ -931,7 +896,7 @@
 .pc_bg{
     clear:both;
     width:100%;
-    height:62px;
+    height:40px;
     background:#d32f2f
 }
 #pc{
@@ -941,8 +906,15 @@
 .pc h2{
     width:1000px;
     margin:auto;
-    margin-top:-50px;
-    margin-bottom:75px
+    margin-top:-35px;
+    margin-bottom:60px;
+    font-size:20px;
+    font-weight:500;
+}
+.pc h3{
+    font-size:16px;
+    font-weight:400;
+    text-align:center;
 }
 .pc a{
     color:#fff
@@ -964,8 +936,6 @@
     cursor:pointer
 }
 .pc1 h3{
-    font-size:16px;
-    text-align:center;
     margin-bottom:27px
 }
 .pc2 a{
@@ -985,8 +955,6 @@
     cursor:pointer
 }
 .pc2 h3{
-    font-size:16px;
-    text-align:center;
     margin-top:-6px;
     margin-bottom:10px
 }
@@ -1007,8 +975,6 @@
     cursor:pointer
 }
 .pc3 h3{
-    font-size:16px;
-    text-align:center;
     margin-bottom:27px
 }
 .pc4 a{
@@ -1028,8 +994,6 @@
     cursor:pointer
 }
 .pc4 h3{
-    font-size:16px;
-    text-align:center;
     margin-top:-6px;
     margin-bottom:10px
 }
@@ -1050,8 +1014,6 @@
     cursor:pointer
 }
 .pc5 h3{
-    font-size:16px;
-    text-align:center;
     margin-top:-6px;
     margin-bottom:10px
 }
@@ -1072,8 +1034,6 @@
     cursor:pointer
 }
 .pc6 h3{
-    font-size:16px;
-    text-align:center;
     margin-bottom:27px
 }
 .snack{
@@ -1083,7 +1043,7 @@
 .snack_bg{
     clear:both;
     width:100%;
-    height:62px;
+    height:40px;
     background:#d32f2f
 }
 #snack{
@@ -1093,8 +1053,16 @@
 .snack h2{
     width:1000px;
     margin:auto;
-    margin-top:-50px;
-    margin-bottom:75px
+    margin-top:-35px;
+    margin-bottom:60px;
+    font-size:20px;
+    font-weight:500;
+}
+.snack h3{
+    font-size:16px;
+    font-weight:400;
+    text-align:center;
+    margin-bottom:5px
 }
 .snack a{
     color:#fff
@@ -1115,13 +1083,7 @@
     float:left;
     margin-right:143px;
     cursor:pointer
-}
-.snack1 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:5px
-}
-.snack2 a{
+}.snack2 a{
     display:block;
     width:228px;
     height:197px;
@@ -1136,11 +1098,6 @@
     float:left;
     margin-right:143px;
     cursor:pointer
-}
-.snack2 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:5px
 }
 .snack3 a{
     display:block;
@@ -1157,11 +1114,6 @@
     float:left;
     margin-bottom:30px;
     cursor:pointer
-}
-.snack3 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:5px
 }
 .snack4 a{
     display:block;
@@ -1180,11 +1132,6 @@
     margin-right:143px;
     cursor:pointer
 }
-.snack4 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:5px
-}
 .snack5 a{
     display:block;
     width:228px;
@@ -1200,11 +1147,6 @@
     float:left;
     margin-right:143px;
     cursor:pointer
-}
-.snack5 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:5px
 }
 .snack6 a{
     display:block;
@@ -1223,11 +1165,6 @@
     margin-bottom:30px;
     cursor:pointer
 }
-.snack6 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:5px
-}
 .snack7 a{
     display:block;
     width:228px;
@@ -1243,11 +1180,6 @@
     float:left;
     margin-right:143px;
     cursor:pointer
-}
-.snack7 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:5px
 }
 .snack8 a{
     display:block;
@@ -1265,11 +1197,6 @@
     margin-right:143px;
     cursor:pointer
 }
-.snack8 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:5px
-}
 .snack9 a{
     display:block;
     width:228px;
@@ -1285,11 +1212,6 @@
     float:left;
     margin-bottom:30px;
     cursor:pointer
-}
-.snack9 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:5px
 }
 .snack10 a{
     display:block;
@@ -1307,11 +1229,6 @@
     margin-right:143px;
     cursor:pointer
 }
-.snack10 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:5px
-}
 .snack11 a{
     display:block;
     width:228px;
@@ -1327,11 +1244,6 @@
     float:left;
     margin-bottom:100px;
     cursor:pointer
-}
-.snack11 h3{
-    font-size:16px;
-    text-align:center;
-    margin-bottom:5px
 }
 .ad_wrap{
     clear:both;

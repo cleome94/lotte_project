@@ -118,6 +118,10 @@ $(document).ready(function(){
         ]
     });
 
-
+    function tick(){
+      $('.notice_title li:first').slideUp(function(){
+        $(this).appendTo($('.notice_title')).slideDown();
+      });
+    }
+    setInterval(function(){tick()}, 5000);
   });
-  

@@ -1,6 +1,9 @@
 .wrap{
     min-width:1000px
 }
+body{
+    overflow-x:hidden;
+}
 .header_wrap{
     margin:auto;
     height:138px;
@@ -8,7 +11,7 @@
     top:0;
     left:0;
     right:0;
-    background: #0f0f0f;
+    background: #fff;
     z-index:20
 }
 /* .header{
@@ -22,18 +25,15 @@
 }
 .logo a{
     display:block;
-    width:225px;
+    width:239px;
     height:40px;
-    background:url(../images/logo.png) no-repeat;
+    background:url(../images/login/logo.png) no-repeat;
     text-indent:-9999px
 }
 .gnb{
     width:1000px;
     margin:0 auto;
-    border-top: 1px solid #fff
-}
-.gnb a{
-    color:#fff;
+    border-top: 1px solid #000
 }
 .gnb a:hover{
     color:#d32f2f;
@@ -46,7 +46,6 @@
 }
 .gnb_menu_wrap{
     width:1000px;
-    border-bottom:1px solid#7a7a7a;
     display:flex
 }
 .gnb_menu1{
@@ -55,7 +54,6 @@
 }
 .gnb_menu1 a{
     font-size:20px;
-    font-weight:lighter;
     float:left;
     display:block;
     padding:20px 30px
@@ -70,6 +68,7 @@
 }
 .gnb_ticket a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 .gnb_menu2{
@@ -77,7 +76,6 @@
 }
 .gnb_menu2 a{
     font-size:20px;
-    font-weight:lighter;
     float: left;
     display:block;
     padding:20px 30px
@@ -92,6 +90,7 @@
 }
 .gnb_movie a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 .gnb_menu3{
@@ -99,7 +98,6 @@
 }
 .gnb_menu3 a{
     font-size:20px;
-    font-weight:lighter;
     float: left;
     display:block;
     padding:20px 30px
@@ -114,6 +112,7 @@
 }
 .gnb_cinema a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 .gnb_menu4{
@@ -121,7 +120,6 @@
 }
 .gnb_menu4 a{
     font-size:20px;
-    font-weight:lighter;
     float:left;
     display:block;
     padding:20px 30px
@@ -136,6 +134,7 @@
 }
 .gnb_event a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 .gnb_menu5{
@@ -143,7 +142,6 @@
 }
 .gnb_menu5 a{
     font-size:20px;
-    font-weight:lighter;
     float:left;
     display:block;
     padding:20px 30px
@@ -158,6 +156,7 @@
 }
 .gnb_store a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 
@@ -165,10 +164,10 @@
     border:none;
     width:32px;
     height:22px;
-    background:url(../images/tap_menu.png) no-repeat;
+    background:url(../images/login/tap_menu.png) no-repeat;
     text-indent:-9999px;
     float:right;
-    margin-top:-45px;
+    margin-top:-40px;
     margin-left:170px;
     cursor:pointer
 }
@@ -185,7 +184,7 @@
     position:absolute;
     margin:auto;
     margin-left:-200px;
-    top:136px;
+    top:138px;
     z-index:11;
     display:none
 }
@@ -210,7 +209,7 @@
 .mm{
     float:left;
     margin-top:41px;
-    margin-left:50px
+    margin-left:60px
 }
 .main_movie{
     font-size:16px;
@@ -227,7 +226,7 @@
 .mc{
     float:left;
     margin-top:41px;
-    margin-left:50px
+    margin-left:60px
 }
 .main_cinema{
     font-size:16px;
@@ -313,7 +312,7 @@
 .mcs{
     float:left;
     margin-top:370px;
-    margin-left:-870px
+    margin-left:-850px
 }
 .main_cs{
     font-size:16px;
@@ -330,7 +329,7 @@
 .me{
     float:left;
     margin-top:370px;
-    margin-left:-750px
+    margin-left:-730px
 }
 .main_event{
     font-size:16px;
@@ -347,7 +346,7 @@
 .mem{
     float:left;
     margin-top:370px;
-    margin-left:-298px
+    margin-left:-278px
 }
 .main_mem{
     font-size:16px;
@@ -403,7 +402,7 @@
     text-indent:-9999px;
     position:absolute;
     margin-top:-60px;
-    margin-left:-40px;
+    margin-left:-20px;
     cursor:pointer
 }
 .log_wrap{
@@ -495,15 +494,12 @@
 .gnb_bg{
     width:100%;
     height:44px;
-    background:#383838;
+    background:#f9f9f9;
     position:absolute;
     left:0;
     top:136px;
     z-index:-1;
     display:none
-}
-.top_menu a{
-    color:#fff;
 }
 .top_menu{
     width:1000px;
@@ -520,7 +516,7 @@
     display:block;
     width:82px;
     height:26px;
-    background:url(../images/membership.png) no-repeat;
+    background:url(../images/login/membership.png) no-repeat;
     text-indent:-9999px;
 
 }
@@ -533,10 +529,11 @@
     display:block;
     width:103px;
     height:23px;
-    background:url(../images/ticket.png) no-repeat;
+    background:url(../images/login/ticket.png) no-repeat;
     text-indent:-9999px
 }
 .top_menu_right{
+    font-weight:500;
     float:right;
     position:relative;
     top:-90px
@@ -546,7 +543,6 @@
 }
 .top_menu3:after{
     content:"I";
-    color:#fff;
     margin:0 10px
 }
 .top_menu4{
@@ -554,7 +550,6 @@
 }
 .top_menu4:after{
     content:"I";
-    color:#fff;
     margin:0 10px
 }
 .top_menu5{
@@ -562,7 +557,6 @@
 }
 .top_menu5:after{
     content:"I";
-    color:#fff;
     margin:0 10px
 }
 .top_menu6{
@@ -580,7 +574,7 @@
     text-indent:-9999px;
     float:left;
     position:relative;
-    top:-42px
+    top:-40px
 }
 .sns2 a{
     display:block;
@@ -591,7 +585,7 @@
     float:left;
     position:relative;
     left:20px;
-    top:-42px
+    top:-40px
 }
 .sns3 a{
     display:block;
@@ -602,143 +596,13 @@
     float:left;
     position:relative;
     left:40px;
-    top:-42px
+    top:-40px
 }
 .main_wrap{
-    width:1400px;
+    width:1920px;
     margin:0 auto;
     position:relative;
     margin-top:138px
-}
-.main_image1{
-    display:block;
-    width:1400px;
-    height:560px;
-    background:url(../images/main_image.jpg) no-repeat;
-    text-indent:-9999px;
-    /* display:none */
-}
-.main_image2{
-    display:block;
-    width:1400px;
-    height:564px;
-    background:url(../images/main_image02.jpg) no-repeat;
-    text-indent:-9999px;
-    margin-top:0px;
-    display:none
-}
-.main_prev{
-    display:block;
-    width:55px;
-    height:98px;
-    background:url(../images/main_image_left.png) no-repeat;
-    text-indent:-9999px;
-    position:absolute;
-    margin-top:-380px;
-    left:-100px
-}
-.main_next{
-    display:block;
-    width:55px;
-    height:98px;
-    background:url(../images/main_image_right.png) no-repeat;
-    text-indent:-9999px;
-    position:absolute;
-    margin-top:-380px;
-    right:-100px
-}
-.main_teaser1{
-    display:block;
-    width:190px;
-    height:115px;
-    background:url(../images/main_teaser01.png) no-repeat;
-    text-indent:-9999px;
-    position:absolute;
-    margin-top:-115px;
-    right:405px;
-    border-radius:6px;
-    /* display:none */
-}
-.mt_play1{
-    display:block;
-    width:48px;
-    height:48px;
-    background:url(../images/main_teaser_play.png) no-repeat;
-    text-indent:-9999px;
-    position:absolute;
-    margin-top:-80px;
-    right:475px;
-    /* display:none */
-}
-.main_teaser2{
-    display:block;
-    width:190px;
-    height:115px;
-    background:url(../images/main_teaser02.png) no-repeat;
-    text-indent:-9999px;
-    position:absolute;
-    margin-top:-115px;
-    right:204px;
-    border-radius:6px;
-    /* display:none */
-}
-.mt_play2{
-    display:block;
-    width:48px;
-    height:48px;
-    background:url(../images/main_teaser_play.png) no-repeat;
-    text-indent:-9999px;
-    position:absolute;
-    margin-top:-80px;
-    right:274px;
-    /* display:none */
-}
-
-.main_teaser3{
-    display:block;
-    width:190px;
-    height:115px;
-    background:url(../images/main_teaser03.jpg) no-repeat;
-    text-indent:-9999px;
-    position:absolute;
-    margin-top:-115px;
-    right:405px;
-    border-radius:6px;
-    display:none
-}
-.mt_play3{
-    display:block;
-    width:48px;
-    height:48px;
-    background:url(../images/main_teaser_play.png) no-repeat;
-    text-indent:-9999px;
-    position:absolute;
-    margin-top:-80px;
-    right:475px;
-    display:none
-}
-.main_teaser4{
-    display:block;
-    width:190px;
-    height:115px;
-    background:url(../images/main_teaser04.jpg) no-repeat;
-    text-indent:-9999px;
-    position:absolute;
-    margin-top:-115px;
-    right:204px;
-    border-radius:6px;
-    display:none
-}
-.mt_play4{
-    display:block;
-    width:48px;
-    height:48px;
-    background:url(../images/main_teaser_play.png) no-repeat;
-    text-indent:-9999px;
-    position:absolute;
-    margin-top:-80px;
-    right:274px;
-    display:none
 }
 .ro_wrap{
     display:block;
@@ -2337,11 +2201,18 @@
     content:"I";
     margin:0 30px
 }
-.notice1{
-    font-size:16px;
-    font-weight:bold;
-    float:left
-
+.notice_title{
+    height:40px;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.notice_title li{
+    font-size:14px;
+    height:30px;
+    padding:5px;
+    margin:-4px 0px 5px;
 }
 .notice_more{
     display:block;
@@ -2350,7 +2221,7 @@
     background:url(../images/prev_more.png)no-repeat;
     text-indent:-9999px;
     float:right;
-    margin-top:3px;
+    margin-top:-40px;
 
 }
 .ad_wrap{

@@ -12,8 +12,7 @@
     z-index:20
 }
 .header{
-    border-top:1px solid rgb(255, 255, 255);
-    font-weight:bold
+    border-top:1px solid rgb(255, 255, 255)
 }
 .logo{
     width:225px;
@@ -30,7 +29,7 @@
 .gnb{
     width:1000px;
     margin:0 auto;
-    border-top:1px solid#000;
+    border-top: 1px solid #000
 }
 .gnb a:hover{
     color:#d32f2f;
@@ -43,7 +42,6 @@
 }
 .gnb_menu_wrap{
     width:1000px;
-    border-bottom:1px solid#afafaf;
     display:flex
 }
 .gnb_menu1{
@@ -52,10 +50,9 @@
 }
 .gnb_menu1 a{
     font-size:20px;
-    font-weight:lighter;
     float:left;
     display:block;
-    padding:20px 30px;
+    padding:20px 30px
 }
 .gnb_menu1 ul{
     position:absolute;
@@ -67,17 +64,17 @@
 }
 .gnb_ticket a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 .gnb_menu2{
-    position:relative;
+    position:relative
 }
 .gnb_menu2 a{
     font-size:20px;
-    font-weight:lighter;
     float: left;
     display:block;
-    padding:20px 30px;
+    padding:20px 30px
 }
 .gnb_menu2 ul{
     position:absolute;
@@ -89,17 +86,17 @@
 }
 .gnb_movie a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 .gnb_menu3{
-    position:relative;
+    position:relative
 }
 .gnb_menu3 a{
     font-size:20px;
-    font-weight:lighter;
     float: left;
     display:block;
-    padding:20px 30px;
+    padding:20px 30px
 }
 .gnb_menu3 ul{
     position:absolute;
@@ -111,17 +108,17 @@
 }
 .gnb_cinema a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 .gnb_menu4{
-    position:relative;
+    position:relative
 }
 .gnb_menu4 a{
     font-size:20px;
-    font-weight:lighter;
-    float: left;
+    float:left;
     display:block;
-    padding:20px 30px;
+    padding:20px 30px
 }
 .gnb_menu4 ul{
     position:absolute;
@@ -133,17 +130,17 @@
 }
 .gnb_event a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 .gnb_menu5{
-    position:relative;
+    position:relative
 }
 .gnb_menu5 a{
     font-size:20px;
-    font-weight:lighter;
     float:left;
     display:block;
-    padding:20px 30px;
+    padding:20px 30px
 }
 .gnb_menu5 ul{
     position:absolute;
@@ -155,6 +152,7 @@
 }
 .gnb_store a{
     font-size:16px;
+    color:#d66d6d;
     padding-left:20px
 }
 
@@ -165,9 +163,9 @@
     background:url(../images/login/tap_menu.png) no-repeat;
     text-indent:-9999px;
     float:right;
-    margin-top:-45px;
+    margin-top:-40px;
     margin-left:170px;
-    cursor:pointer;
+    cursor:pointer
 }
 .mm_wrap{
     width:1000px;
@@ -182,8 +180,8 @@
     position:absolute;
     margin:auto;
     margin-left:-200px;
-    top:134px;
-    z-index:20;
+    top:138px;
+    z-index:11;
     display:none
 }
 .mt{
@@ -207,7 +205,7 @@
 .mm{
     float:left;
     margin-top:41px;
-    margin-left:50px
+    margin-left:60px
 }
 .main_movie{
     font-size:16px;
@@ -224,7 +222,7 @@
 .mc{
     float:left;
     margin-top:41px;
-    margin-left:50px
+    margin-left:60px
 }
 .main_cinema{
     font-size:16px;
@@ -241,8 +239,7 @@
 .msc{
     float:left;
     margin-top:41px;
-    margin-left:385px;
-
+    margin-left:385px
 }
 .main_special{
     font-size:16px;
@@ -311,7 +308,7 @@
 .mcs{
     float:left;
     margin-top:370px;
-    margin-left:-870px
+    margin-left:-850px
 }
 .main_cs{
     font-size:16px;
@@ -328,7 +325,7 @@
 .me{
     float:left;
     margin-top:370px;
-    margin-left:-750px
+    margin-left:-730px
 }
 .main_event{
     font-size:16px;
@@ -345,7 +342,7 @@
 .mem{
     float:left;
     margin-top:370px;
-    margin-left:-298px
+    margin-left:-278px
 }
 .main_mem{
     font-size:16px;
@@ -401,7 +398,7 @@
     text-indent:-9999px;
     position:absolute;
     margin-top:-60px;
-    margin-left:-40px;
+    margin-left:-20px;
     cursor:pointer
 }
 .log_wrap{
@@ -504,12 +501,12 @@
     width:1000px;
     margin:auto;
     position:relative;
-    margin-top:-143px;
+    margin-top:-145px;
     font-size:12px
 }
 .top_menu1{
     width:108px;
-    margin-top:48px
+    margin-top:47px
 }
 .top_menu1 a{
     display:block;
@@ -521,7 +518,7 @@
 }
 .top_menu2{
     width:136px;
-    margin-top:-23px;
+    margin-top:-22px;
     margin-left:110px;
 }
 .top_menu2 a{
@@ -532,6 +529,7 @@
     text-indent:-9999px
 }
 .top_menu_right{
+    font-weight:500;
     float:right;
     position:relative;
     top:-90px
@@ -562,7 +560,7 @@
 }
 .sns{
     width:1000px;
-    margin:auto
+    margin:auto;
 }
 .sns1 a{
     display:block;
@@ -572,7 +570,7 @@
     text-indent:-9999px;
     float:left;
     position:relative;
-    top:-42px
+    top:-40px
 }
 .sns2 a{
     display:block;
@@ -583,7 +581,7 @@
     float:left;
     position:relative;
     left:20px;
-    top:-42px
+    top:-40px
 }
 .sns3 a{
     display:block;
@@ -594,7 +592,7 @@
     float:left;
     position:relative;
     left:40px;
-    top:-42px
+    top:-40px
 }
 .menu_wrap{
     width:1000px;
@@ -617,8 +615,9 @@
     height:30px;
     border:none;
     background:#fff;
-    font-size:20px;
-    color:#383838;
+    font-size:16px;
+    font-weight:bold;
+    color:#777;
     cursor:pointer;
     position:relative
 }
@@ -627,8 +626,9 @@
     height:30px;
     border:none;
     background:none;
-    font-size:20px;
-    color:#383838;
+    font-size:16px;
+    font-weight:bold;
+    color:#777;
     cursor:pointer;
     position:relative;
     margin-left:350px
@@ -638,14 +638,16 @@
     height:30px;
     border:none;
     background:none;
-    font-size:20px;
-    color:#383838;
+    font-size:16px;
+    font-weight:bold;
+    color:#777;
     cursor:pointer;
     position:relative;
     margin-left:700px
 }
 .on{
     font-weight:bold;
+    color:#383838
 }
 .login_wrap{
     background-color:#eee;
@@ -667,8 +669,7 @@
     top:-56px;
 }
 .txt1{
-    padding-top:40px;
-    font-weight:bold;
+    padding-top:40px
 }
 .id{
     width:374px;
@@ -709,7 +710,7 @@ input[type="checkbox"]:checked {
     font-size:12px;
     margin-top:8px;
     letter-spacing:-1px;
-    font-weight:bold
+    font-weight:500
 }
 .err_txt{
     font-size:14px;
@@ -816,8 +817,6 @@ input[type="checkbox"]:checked {
 }
 .txt2{
     padding-top:37px;
-    letter-spacing:-2px;
-    font-weight:bold;
     margin:0px auto 37px;
     position:relative;
     left:40px;
@@ -829,7 +828,7 @@ input[type="checkbox"]:checked {
     border-radius:6px;
     font-size:14px;
     text-align:right;
-    font-weight:bold;
+    font-weight:500;
     color:#383838;
     margin-left:-540px
 }
@@ -911,7 +910,7 @@ input[type="checkbox"]:checked {
     border-radius:6px;
     clear:both;
     font-size:14px;
-    font-weight:bold
+    font-weight:500
 }
 .pi1{
     margin-top:38px;
@@ -940,7 +939,8 @@ input[type="checkbox"]:checked {
 .yes1{
     position:absolute;
     margin-left:10px;
-    margin-top:8px
+    margin-top:8px;
+    font-weight:500;
 }
 .nmb_log_wrap{
     width:1000px;
@@ -955,7 +955,7 @@ input[type="checkbox"]:checked {
     border-radius:6px;
     color: #fff;
     font-size:18px;
-    font-weight:bold;
+    font-weight:500;
     letter-spacing:-1px;
     margin-left:370px;
     cursor:pointer
@@ -1059,7 +1059,7 @@ margin-bottom: 8px;
     border-radius:6px;
     color: #fff;
     font-size:18px;
-    font-weight:bold;
+    font-weight:500;
     letter-spacing:-1px;
     cursor:pointer;
     margin-left:370px

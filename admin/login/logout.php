@@ -7,7 +7,7 @@ unset($_SESSION["s_id"]);
 
 echo"
     <script type=\"text/javascript\">
-        location.href=\"../index_김서영.html\";
+        location.href=\"../index.html\";
     </script>
 ";
 ?>

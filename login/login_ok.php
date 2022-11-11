@@ -48,7 +48,7 @@ mysqli_close($dbcon);
 
 echo"
     <script type=\"text/javascript\">
-        location.href=\"../index_김서영.html\";
+        location.href=\"../index.html\";
     </script>
 ";
 ?>

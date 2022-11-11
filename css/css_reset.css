@@ -3,7 +3,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd{
     padding:0
 }
 body{
-    letter-spacing:-1px
+    letter-spacing:-1px;
+    font-family:'Noto Sans KR',sans-serif;
 }
 ul,li{
     list-style:none
@@ -14,7 +15,7 @@ a{
 }
 address{
     font-style:normal;
-    font-family:'Noto Sans KR';
+
 }
 .blind{position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent: -9999px}

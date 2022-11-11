@@ -20,7 +20,7 @@
     <div class="wrap">
         <div class="header_wrap">
             <header id="header" class="header">
-                <h1 class="logo hr1"><a href="#">롯데시네마</a></h1>
+                <h1 class="logo hr1"><a href="index.html">롯데시네마</a></h1>
 
                 <nav class="gnb">
                     <h2 class="blind">주요메뉴</h2>
@@ -64,12 +64,12 @@
                                 <li><a href="#">우리동네영화관</a></li>
                             </ul>
                         </li>
-                        <li class="gnb_menu5"><a href="#">스토어</a>
+                        <li class="gnb_menu5"><a href="store.html">스토어</a>
                             <ul class="gnb_store">
-                                <li><a href="#">베스트</a></li>
-                                <li><a href="#">관람권</a></li>
-                                <li><a href="#">스낵음료</a></li>
-                                <li><a href="#">포토카드</a></li>
+                                <li><a href="store.html#best">베스트</a></li>
+                                <li><a href="store.html#ticket">관람권</a></li>
+                                <li><a href="store.html#snack">스낵음료</a></li>
+                                <li><a href="store.html#pc">포토카드</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -210,11 +210,11 @@
                         <button type="button" class="exit">나가기</button>
 
                         <div class="log_wrap">
-                            <button type="button" class="login">로그인</button>
+                            <button type="button" class="login" onclick="location.href='login.html'">로그인</button>
                             <div class="join_bg"></div>
                             <p class="join1">로그인 하시고<br>
                             다양한 혜택을 확인하세요.</p>
-                            <button type="button" class="join2">회원가입</button>
+                            <button type="button" class="join2" onclick="location.href='join.html'">회원가입</button>
                         </div>
 
                         <a class="ad1" href="#">삼성화재 다이렉트
@@ -237,14 +237,14 @@
                 <div class="top_menu">
                     <h2 class="blind">사용자메뉴</h2>
                     <ul class="top_menu_left">
-                        <li class="top_menu1"><a href="#">회원가입</a></li>
+                        <li class="top_menu1"><a href="join.html">회원가입</a></li>
                         <li class="top_menu2"><a href="#">바로예매 </a></li>
                     </ul>
                     <ul class="top_menu_right">
                         <li class="top_menu3"><a href="#">멤버십</a></li>
                         <li class="top_menu4"><a href="#">고객센터</a></li>
                         <li class="top_menu5"><a href="#">단체관람/단체문의</a></li>
-                        <li class="top_menu6"><a href="#">로그인</a></li>
+                        <li class="top_menu6"><a href="login.html">로그인</a></li>
                     </ul>
 
                 </div>
@@ -265,15 +265,11 @@
             <h2 class="blind">영화 주요 소식</h2>
             <ul class="main_image">
                 <li><a href="#">
-                    <img src="images/main_image.jpg" alt="기다림은  끝났다!
-                    예매로'엄마판 테이큰'확인>
-                    (반도)이정현 (숨바꼭질)문정희 (독전)진서연
-                    리미트 8월 31일 대개봉 상세정보 보기">
+                    <img src="images/main_image01.jpg" alt="겨울왕국, 엔칸토 제작진 디즈니 스트레인지 월드 11월 23일 대개봉">
                 </a>
                 </li>
                 <li><a href="#">
-                        <img src="images/main_image02.jpg" alt="청춘의 정답은 하나가 아니야
-                        짱구는 못말려 극장판 수수께끼! 꽃피는 천하떡잎학교 절찬상영중 상세정보 보기">
+                        <img src="images/main_image02.jpg" alt="끝까지 싸워 살아남아라! 킹덤2 아득한 대지로 2022년 11월 16일 개봉">
                     </a>
                 </li>
             </ul>
@@ -570,9 +566,15 @@
         
                 <section class="notice hr">
                 <h2><a href="#">공지사항</a></h2>
-                    <p><a class="notice1" href="#">영화관람권 가격 변경 안내</a></p>
+                <div class="notice_list">
+                    <ul class="notice_title">
+                        <li><a href="#">영화관람권 가격 변경 안내</a></li>
+                        <li><a href="#">2D 일반 관람권 활용 스페셜관 이용 안내</a></li>
+                        <li><a href="#">롯데시네마 영구VIP 서비스 종료 안내</a></li>
+                    </ul>
+                </div>
 
-                    <a class="notice_more" href="#">더보기 ></a>
+                    <a class="notice_more" href="notice.php">더보기 ></a>
                 </section>
             
             <div class="ad_wrap">
