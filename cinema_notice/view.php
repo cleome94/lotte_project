@@ -1,7 +1,7 @@
 <?php
 include "../inc/session.php";
 $n_idx = $_GET["n_idx"];
-$table_name = "notice";
+$table_name = "cinema_notice";
 include "../inc/dbcon.php";
 $sql = "select * from $table_name where idx=$n_idx;";
 /* echo $sql;
@@ -65,7 +65,27 @@ mysqli_query($dbcon, $sql);
     <table class="notice_list_set">
         <tr class="notice_list_title">
             <th class="v_title">구분</th>
-            <td class="v_content"><?php echo $array["sort"]; ?></td>
+            <td class="v_content">                            
+                <?php
+                if($array["cate"] == "b"){
+                    echo "서울";
+                } else if($array["cate"] == "c"){
+                    echo "경기/인천";
+                } else if($array["cate"] == "d"){
+                    echo "충청/대전";
+                } else if($array["cate"] == "e"){
+                    echo "전라/광주";
+                } else if($array["cate"] == "f"){
+                    echo "경북/대구";
+                } else if($array["cate"] == "g"){
+                    echo "경남/부산/울산";
+                } else if($array["cate"] == "h"){
+                    echo "강원";
+                } else if($array["cate"] == "i"){
+                    echo "제주";
+                };
+                ?>
+            </td>
         </tr>
         <tr class="notice_view_content">
             <th class="v_title">제목</th>
@@ -90,7 +110,7 @@ mysqli_query($dbcon, $sql);
         </tr>
     </table>
     <p class="list">
-        <a href="../notice.php">[목록]</a>
+        <a href="../cinema_notice.php">[목록]</a>
         <?php if($s_id == "admin"){ ?>
         <a href="modify.php?n_idx=<?php echo $n_idx; ?>">[수정]</a>
         <a href="#" onclick="remove_notice()">[삭제]</a>

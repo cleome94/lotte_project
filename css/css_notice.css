@@ -29,7 +29,7 @@
 .gnb{
     width:1000px;
     margin:0 auto;
-    border-top: 1px solid #000
+    border-top: 1px solid #d32f2f
 }
 .gnb a:hover{
     color:#d32f2f;
@@ -602,23 +602,23 @@
 .notice_wrap button{
     width:172px;
     height:40px;
-    background:#888;
-    border:1px solid#888;
     box-sizing: border-box;
     font-size:16px;
     font-weight:bold;
-    color:#fff;
     margin-top:50px;
     margin-bottom:50px;
     cursor:pointer
 }
-.on{
+.tab1_btn{
     background:#d32f2f;
-    border:1px solid #000;
+    border:1px solid #d32f2f;
     color:#fff
 }
 .tab2_btn{
-    margin-left:-5px
+    margin-left:-5px;
+    background:#888;
+    border:1px solid#888;
+    color:#fff;
 }
 .line{
     border-bottom:1px solid#292929;
@@ -736,30 +736,22 @@ td{
     margin-top:30px;
     text-align:center;
 }
-.pasing ul li{
-    float:left;
-    margin-right:14px
+.pager a{
+    margin:0 5px;
 }
-.pasing button{
-    width:25px;
-    height:25px;
-    border:none;
-    cursor:pointer
-}
-.btn_prev{
-    display:block;
+.btn_prev a{
+    display:inline-block;
     width:20px;
     height:20px;
     background:url(../images/notice/prev.png) no-repeat;
     text-indent:-9999px;
 }
-.btn_next{
-    display:block;
+.btn_next a{
+    display:inline-block;
     width:20px;
     height:20px;
     background:url(../images/notice/next.png) no-repeat;
     text-indent:-9999px;
-    float:left
 }
 .btn_end{
     display:block;
@@ -767,63 +759,6 @@ td{
     height:20px;
     background:url(../images/notice/end.png) no-repeat;
     text-indent:-9999px
-}
-.tab2_cont{
-    width:1000px;
-    margin:auto;
-    display:none
-}
-#movieArea{
-    width:128px;
-    height:31px;
-    border-radius:6px;
-    border:1px solid#292929;
-    box-sizing:border-box;
-    margin-left:49px
-}
-#area{
-    /* width:112px; */
-    height:31px;
-    border-radius:6px;
-    border:1px solid#292929;
-    box-sizing:border-box
-}
-.select2{
-    /* width:91px; */
-    height:31px;
-    border-radius:6px;
-    border:1px solid#292929;
-    box-sizing:border-box
-}
-.search2{
-    /* width:424px; */
-    width:40%;
-    height:31px;
-    border-radius:6px;
-    border:1px solid #292929;
-    box-sizing:border-box
-}
-.search2_btn{
-    width:91px;
-    height:31px;
-    background:#d32f2f;
-    border-radius:6px;
-    box-sizing:border-box;
-    border:none;
-    color:#fff;
-    font-size:12px;
-    font-weight:bold;
-    cursor:pointer
-}
-.pasing2{
-    font-size:14px;
-    font-weight:bold;
-    margin-top:30px;
-    margin-left:406px
-}
-.pasing2 ul li{
-    float:left;
-    margin-right:14px
 }
 .ad_wrap{
     clear:both;

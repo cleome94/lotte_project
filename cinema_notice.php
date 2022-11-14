@@ -1,7 +1,13 @@
 <?php
 include "inc/session.php";
 include "inc/dbcon.php";
-$sql = "select * from notice;";
+$cate = isset($_GET["cate"])? $_GET["cate"] : "";
+$table_name = "cinema_notice";
+if($cate){
+    $sql = "select * from $table_name where cate='$cate';";
+} else{
+    $sql = "select * from $table_name;";
+};
 $result = mysqli_query($dbcon, $sql);
 $total = mysqli_num_rows($result);
 $list_num = 10;
@@ -27,9 +33,9 @@ if($e_pageNum > $total_page){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/css_reset.css">
-    <link rel="stylesheet" type="text/css" href="css/css_notice.css">
+    <link rel="stylesheet" type="text/css" href="css/css_cinema_notice.css">
     <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/notice.js"></script>
+    <script src="js/cinema_notice.js"></script>
     <style>
         <?php if($s_id == "admin"){ ?>
             .total{
@@ -286,29 +292,41 @@ if($e_pageNum > $total_page){
     <main id="content" class="content">
         <div class="notice_wrap">
             <h2 class="notice">공지사항</h2>
-            <button type="button" id="tab1_btn" class="tab1_btn" onclick="tab1_btn_on()">전체 공지</button>
-            <button type="button" id="tab2_btn" class="tab2_btn" onclick="location.href='cinema_notice.php'">영화관 공지</button>
+            <button type="button" id="tab1_btn" class="tab1_btn" onclick="location.href='notice.php'">전체 공지</button>
+            <button type="button" id="tab2_btn" class="tab2_btn">영화관 공지</button>
             <div class="line"></div>
         </div>
-        <div class="tab1_cont" id="tab1_cont">
-            <h3 class="blind">전체 공지</h3>
+        <div class="tab2_cont">
+            <h3 class="blind">영화관 공지</h3>
             <?php if($s_id == "admin"){ ?>
             <p class="total">
                 <span>전체<em> <?php echo $total; ?></em>건</span>
-                <span><a class="write" href="notice/write.php">[글쓰기]</a></span>
+                <span><a class="write" href="cinema_notice/write.php">[글쓰기]</a></span>
             </p>
             <?php } else{ ?>
                 <p class="total">전체<em> <?php echo $total; ?></em>건</p>
             <?php }; ?>
             <div class="search_bg">
                 <fieldset class="search_wrap">
-                    <select class="select1">
+                    <select name="movieArea" id="movieArea" class="movieArea" onchange="sel_cate()">
+                            <option value="a"<?php if($cate == "a") echo " selected"; ?>>지역</option>
+                            <option value="b"<?php if($cate == "b") echo " selected"; ?>>서울</option>
+                            <option value="c"<?php if($cate == "c") echo " selected"; ?>>경기/인천</option>
+                            <option value="d"<?php if($cate == "d") echo " selected"; ?>>충청/대전</option>
+                            <option value="e"<?php if($cate == "e") echo " selected"; ?>>전라/광주</option>
+                            <option value="f"<?php if($cate == "f") echo " selected"; ?>>경북/대구</option>
+                            <option value="g"<?php if($cate == "g") echo " selected"; ?>>경남/부산/울산</option>
+                            <option value="h"<?php if($cate == "h") echo " selected"; ?>>강원</option>
+                            <option value="i"<?php if($cate == "i") echo " selected"; ?>>제주</option>
+                    </select>
+                    <select class="select2">
                         <option value="">제목</option>
                         <option value="">내용</option>
                         <option value="">제목 + 내용</option>
                     </select>
-                    <input type="text" name="" id="" class="search1" placeholder="  검색어를 입력해주세요.">
-                    <button type="button" class="search1_btn">검색</button>
+
+                    <input type="text" name="" id="" class="search2" placeholder="검색어를 입력해주세요.">
+                    <button type="button" class="search2_btn">검색</button>
                 </fieldset>
             </div>
             <table class="notice_list">
@@ -322,7 +340,11 @@ if($e_pageNum > $total_page){
                     </tr>
                     <?php
                         $start = ($page -1) * $list_num;
-                            $sql = "select * from notice order by idx desc limit $start, $list_num;";
+                        if($cate){
+                            $sql = "select * from $table_name where cate='$cate' order by idx desc limit $start, $list_num;";
+                        } else{
+                            $sql = "select * from $table_name order by idx desc limit $start, $list_num;";
+                        };
                         /* echo $sql;
                         exit; */
                         $result = mysqli_query($dbcon, $sql);
@@ -332,10 +354,28 @@ if($e_pageNum > $total_page){
                     <tr class="notice_list_content">
                         <td><?php echo $i; ?></td>
                         <td class="notice_content_title">
-                            <?php echo $array["sort"]; ?>
+                            <?php
+                            if($array["cate"] == "b"){
+                                echo "서울";
+                            } else if($array["cate"] == "c"){
+                                echo "경기/인천";
+                            } else if($array["cate"] == "d"){
+                                echo "충청/대전";
+                            } else if($array["cate"] == "e"){
+                                echo "전라/광주";
+                            } else if($array["cate"] == "f"){
+                                echo "경북/대구";
+                            } else if($array["cate"] == "g"){
+                                echo "경남/부산/울산";
+                            } else if($array["cate"] == "h"){
+                                echo "강원";
+                            } else if($array["cate"] == "i"){
+                                echo "제주";
+                            };
+                            ?>
                         </td>
                         <td>
-                            <a href="notice/view.php?n_idx=<?php echo $array["idx"]; ?>">
+                            <a href="cinema_notice/view.php?n_idx=<?php echo $array["idx"]; ?>">
                             <?php echo $array["n_title"]; ?>
                             </a>
                         </td>
@@ -352,21 +392,21 @@ if($e_pageNum > $total_page){
             <?php
             if($page <= 1){
             ?>
-            <a class="btn_prev" href="notice.php?page=1">이전</a>
+            <a class="btn_prev" href="cinema_notice.php?page=1">이전</a>
             <?php } else{ ?>
-            <a class="btn_prev" href="notice.php?page=<?php echo ($page -1); ?>">이전</a>
+            <a class="btn_prev" href="cinema_notice.php?page=<?php echo ($page -1); ?>">이전</a>
             <?php }; ?>
             <?php
             for($print_page = $s_pageNum; $print_page <= $e_pageNum; $print_page++){
             ?>
-            <a href="notice.php?page=<?php echo $print_page; ?>"><?php echo $print_page; ?></a>
+            <a href="cinema_notice.php?page=<?php echo $print_page; ?>"><?php echo $print_page; ?></a>
             <?php }; ?>
             <?php
             if($page >= $total_page){
             ?>
-            <a class="btn_next" href="notice.php?page=<?php echo $e_pageNum; ?>">다음</a>
+            <a class="btn_next" href="cinema_notice.php?page=<?php echo $e_pageNum; ?>">다음</a>
             <?php } else{ ?>
-            <a class="btn_next" href="notice.php?page=<?php echo ($page +1); ?>">다음</a>
+            <a class="btn_next" href="cinema_notice.php?page=<?php echo ($page +1); ?>">다음</a>
             <?php }; ?>
             </p>
         </div>
