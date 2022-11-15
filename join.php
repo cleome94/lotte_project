@@ -13,7 +13,7 @@
 <body>
     <div class="wrap">
         <header id="header" class="header">
-            <h1 class="logo"><a href="index.html">롯데시네마</a></h1>
+            <h1 class="logo"><a href="index.php">롯데시네마</a></h1>
             <h2>회원가입</h2>
         </header>
 

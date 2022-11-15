@@ -48,7 +48,7 @@ mysqli_close($dbcon);
 
 echo"
     <script type=\"text/javascript\">
-        location.href=\"../index.html\";
+        location.href=\"../index.php\";
     </script>
 ";
 ?>

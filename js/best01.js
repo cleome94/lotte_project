@@ -22,7 +22,7 @@ $(function(){
         $(".prec1").show();
       });
 
-      var t = $(".p_num");  
+      var t = $(".count");  
     $('.btn_mins').attr('disabled',true);
     $(".btn_plus").click(function(){  
     t.val(Math.abs(parseInt(t.val()))+1);

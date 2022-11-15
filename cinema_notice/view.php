@@ -23,21 +23,11 @@ mysqli_query($dbcon, $sql);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/css_reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/view.css">
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/view.js"></script>
     <style>
-        a{text-decoration:none;margin:0 5px}
-        table, td{border-collapse:collapse}
-        th, td{padding:10px;}
-        .notice_list_set{width:860px}
-        .notice_list_title{border-top:2px solid #999;border-bottom:1px solid #999;}
-        .notice_view_content{border-bottom:1px solid #999;}
-        .notice_view_text{border-bottom:2px solid #999;}
-        .v_title{width:60px; background:#eee}
-        .v_content{width:500px;text-align:left;padding-left:20px}
-
-        .list{width:860px;text-align:center}
-        .notice_content_title{text-align:left;padding:left;}
-
-        table a:hover{color:rgb(255, 128, 0)}
         <?php if($s_id == "admin"){ ?>
         .write_area{
             width:1000px;
@@ -56,65 +46,86 @@ mysqli_query($dbcon, $sql);
     </script>
 </head>
 <body>
-    <h2>공지사항</h2>
-    <?php if($s_id =="admin"){ ?>
-    <p class="write_area">
-        <span><a href="write.php">[글쓰기]</a></span>
-    </p>
-    <?php }; ?>
-    <table class="notice_list_set">
-        <tr class="notice_list_title">
-            <th class="v_title">구분</th>
-            <td class="v_content">                            
-                <?php
-                if($array["cate"] == "b"){
-                    echo "서울";
-                } else if($array["cate"] == "c"){
-                    echo "경기/인천";
-                } else if($array["cate"] == "d"){
-                    echo "충청/대전";
-                } else if($array["cate"] == "e"){
-                    echo "전라/광주";
-                } else if($array["cate"] == "f"){
-                    echo "경북/대구";
-                } else if($array["cate"] == "g"){
-                    echo "경남/부산/울산";
-                } else if($array["cate"] == "h"){
-                    echo "강원";
-                } else if($array["cate"] == "i"){
-                    echo "제주";
-                };
-                ?>
-            </td>
-        </tr>
-        <tr class="notice_view_content">
-            <th class="v_title">제목</th>
-            <td class="v_content"><?php echo $array["n_title"]; ?></td>
-        </tr>
-        <tr class="notice_view_content">
-            <th class="v_title">등록일</th>
-            <td class="v_content"><?php echo $array["w_date"]; ?></td>
-        </tr>
-        <tr class="notice_view_content">
-            <th class="v_title">조회수</th>
-            <td class="v_content"><?php echo $cnt; ?></td>
-        </tr>
-        <tr class="notice_view_content">
-            <td colspan="2" class="v_text">
-            <?php
-            $n_content = str_replace("\n","<br>", $array["n_content"]);
-            $n_content = str_replace(" ","&nbsp;", $n_content);
-            echo $n_content;
-            ?>
-            </td>
-        </tr>
-    </table>
-    <p class="list">
-        <a href="../cinema_notice.php">[목록]</a>
-        <?php if($s_id == "admin"){ ?>
-        <a href="modify.php?n_idx=<?php echo $n_idx; ?>">[수정]</a>
-        <a href="#" onclick="remove_notice()">[삭제]</a>
-        <?php }; ?>
-    </p>
+    <div class="wrap">
+    <?php include "../inc/header.html"; ?>
+    <main id="content" class="content">
+        <div class="notice_view">
+            <h2>공지사항</h2>
+            <?php if($s_id =="admin"){ ?>
+            <p class="write_area">
+                <span><a href="write.php">[글쓰기]</a></span>
+            </p>
+            <?php }; ?>
+        </div>
+        <section>
+            <table class="notice_list_set">
+                <thead class="notice_list_title">
+                    <tr>
+                        <th class="title"><?php echo $array["n_title"]; ?></th>
+                    </tr>
+                </thead>
+                <tbody class="notice_view_content">
+                    <tr>
+                        <td>
+                            <span class="v_title">구분</span>
+                            <span class="v_content">                            
+                                <?php
+                                if($array["cate"] == "b"){
+                                    echo "서울";
+                                } else if($array["cate"] == "c"){
+                                    echo "경기/인천";
+                                } else if($array["cate"] == "d"){
+                                    echo "충청/대전";
+                                } else if($array["cate"] == "e"){
+                                    echo "전라/광주";
+                                } else if($array["cate"] == "f"){
+                                    echo "경북/대구";
+                                } else if($array["cate"] == "g"){
+                                    echo "경남/부산/울산";
+                                } else if($array["cate"] == "h"){
+                                    echo "강원";
+                                } else if($array["cate"] == "i"){
+                                    echo "제주";
+                                };
+                                ?>
+                            </span>
+                            <span class="v_title">등록일</span>
+                            <span class="v_content"><?php echo $array["w_date"]; ?></span>
+                            <span class="v_title">조회수</span>
+                            <span class="v_content"><?php echo $cnt; ?></span>
+                        </td>
+                    </tr>
+                </tbody>
+                <tr class="notice_view_content">
+                    <td colspan="2" class="v_text">
+                    <?php
+                    $n_content = str_replace("\n","<br>", $array["n_content"]);
+                    $n_content = str_replace(" ","&nbsp;", $n_content);
+                    echo $n_content;
+                    ?>
+                    </td>
+                </tr>
+            </table>
+            <p class="list">
+                <a href="../cinema_notice.php">목록</a>
+                <?php if($s_id == "admin"){ ?>
+                <a href="modify.php?n_idx=<?php echo $n_idx; ?>">[수정]</a>
+                <a href="#" onclick="remove_notice()">[삭제]</a>
+                <?php }; ?>
+            </p>
+        </section>
+        <div class="ad_wrap">
+            <div class="ad">
+                <a href="#" class="banner_ad1">EBS 인기 애니 '엄마 까투리' 첫 극장판 탄생
+                    도시로 간 까투리 가족
+                    9월 8일, 까투리기차 출발합니다!</a>
+                <a class="banner_ad2" href="#">현대해상 다이렉트 자동차보험
+                신규 자동차 보험 30만원 이상 가입시
+                롯데 3만원 상품권 지급!</a>
+            </div>
+        </div>
+    </main>
+    <?php include "../inc/footer.html"; ?>
+    </div>
 </body>
 </html>

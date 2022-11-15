@@ -20,7 +20,7 @@
     <div class="wrap">
         <div class="header_wrap">
             <header id="header" class="header">
-                <h1 class="logo hr1"><a href="index.html">롯데시네마</a></h1>
+                <h1 class="logo hr1"><a href="index.php">롯데시네마</a></h1>
 
                 <nav class="gnb">
                     <h2 class="blind">주요메뉴</h2>
@@ -64,12 +64,12 @@
                                 <li><a href="#">우리동네영화관</a></li>
                             </ul>
                         </li>
-                        <li class="gnb_menu5"><a href="store.html">스토어</a>
+                        <li class="gnb_menu5"><a href="store.php">스토어</a>
                             <ul class="gnb_store">
-                                <li><a href="store.html#best">베스트</a></li>
-                                <li><a href="store.html#ticket">관람권</a></li>
-                                <li><a href="store.html#snack">스낵음료</a></li>
-                                <li><a href="store.html#pc">포토카드</a></li>
+                                <li><a href="store.php#best">베스트</a></li>
+                                <li><a href="store.php#ticket">관람권</a></li>
+                                <li><a href="store.php#snack">스낵음료</a></li>
+                                <li><a href="store.php#pc">포토카드</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -210,11 +210,11 @@
                         <button type="button" class="exit">나가기</button>
 
                         <div class="log_wrap">
-                            <button type="button" class="login" onclick="location.href='login.html'">로그인</button>
+                            <button type="button" class="login" onclick="location.href='login.php'">로그인</button>
                             <div class="join_bg"></div>
                             <p class="join1">로그인 하시고<br>
                             다양한 혜택을 확인하세요.</p>
-                            <button type="button" class="join2" onclick="location.href='join.html'">회원가입</button>
+                            <button type="button" class="join2" onclick="location.href='join.php'">회원가입</button>
                         </div>
 
                         <a class="ad1" href="#">삼성화재 다이렉트
@@ -237,14 +237,14 @@
                 <div class="top_menu">
                     <h2 class="blind">사용자메뉴</h2>
                     <ul class="top_menu_left">
-                        <li class="top_menu1"><a href="join.html">회원가입</a></li>
+                        <li class="top_menu1"><a href="join.php">회원가입</a></li>
                         <li class="top_menu2"><a href="#">바로예매 </a></li>
                     </ul>
                     <ul class="top_menu_right">
                         <li class="top_menu3"><a href="#">멤버십</a></li>
                         <li class="top_menu4"><a href="#">고객센터</a></li>
                         <li class="top_menu5"><a href="#">단체관람/단체문의</a></li>
-                        <li class="top_menu6"><a href="login.html">로그인</a></li>
+                        <li class="top_menu6"><a href="login.php">로그인</a></li>
                     </ul>
 
                 </div>

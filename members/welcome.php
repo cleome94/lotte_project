@@ -14,8 +14,8 @@
         <h2>가입완료</h2>
         <p class="welcome">롯데시네마 회원이 되신 것을 환영합니다!</p>
         <p>
-            <a class="home" href="../index.html">홈으로 이동</a>
-            <a class="login" href="../login.html">로그인 페이지로 이동</a>
+            <a class="home" href="../index.php">홈으로 이동</a>
+            <a class="login" href="../login.php">로그인 페이지로 이동</a>
         </p>
     </div>
 </body>
