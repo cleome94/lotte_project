@@ -1,0 +1,12 @@
+.form_wrap{
+    width:1000px;
+    margin:auto;
+    margin-top:210px
+}
+fieldset{
+    border:0
+}
+legend{
+    font-size:24px;
+    font-weight:500;
+}

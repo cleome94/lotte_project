@@ -27,7 +27,9 @@ if($e_pageNum > $total_page){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/css_reset.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/css_notice.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/notice.js"></script>
     <style>
@@ -42,7 +44,7 @@ if($e_pageNum > $total_page){
 </head>
 <body>
     <div class="wrap">
-        <?php include "header.html"; ?>
+        <?php include "header.php"; ?>
         <main id="content" class="content">
             <div class="notice_wrap">
                 <h2 class="notice">공지사항</h2>
@@ -141,7 +143,7 @@ if($e_pageNum > $total_page){
                 </div>
             </div>
         </main>
-        <?php include "footer.html"; ?>
+        <?php include "footer.php"; ?>
     </div>
 </body>
 </html>

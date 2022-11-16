@@ -125,3 +125,9 @@ $(document).ready(function(){
     }
     setInterval(function(){tick()}, 5000);
   });
+  function logout(){
+    var ck = confirm("로그아웃 하시겠습니까?");
+    if(ck){
+      location.href="login/logout.php";
+    };
+  };

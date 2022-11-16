@@ -92,25 +92,9 @@
 
                         <div class="phone_no">
                             <label>
-                                <span class="form2_n6">휴대폰 번호</span>
-                                <select name="phone1" id="phone1" class="phone1">
-                                    <option value="SKT">SKT</option>
-                                    <option value="KT">KT</option>
-                                    <option value="LGU+">LGU+</option>
-                                    <option value="SKT알뜰폰">SKT알뜰폰</option>
-                                    <option value="KT알뜰폰">KT알뜰폰</option>
-                                    <option value="LGU+알뜰폰">LGU+알뜰폰</option>
-                                </select>
+                            <span class="form2_n6">휴대폰 번호</span>
+                                <input type="text" name="phone" id="phone" class="phone" placeholder="(' - '생략) 입력해 주세요.">
                             </label>
-                            <select name="phone2" id="phone2" class="phone2">
-                                <option value="010">010</option>
-                                <option value="011">011</option>
-                                <option value="016">016</option>
-                                <option value="017">017</option>
-                                <option value="018">018</option>
-                                <option value="019">019</option>
-                            </select>
-                            <input type="text" name="phone3" id="phone3" class="phone3" placeholder="(' - '생략) 입력해 주세요." title="휴대폰 번호 뒤 6~8자리">
                         </div>
                         <div class="an">
                             <button type="button" class="an_btn">인증번호 받기</button>

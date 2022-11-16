@@ -52,3 +52,9 @@ function prec_btn_on(){
     htu_btn.setAttribute("class","htu_btn");
     prec_btn.setAttribute("class","prec_btn on");
 };
+function logout(){
+  var ck = confirm("로그아웃 하시겠습니까?");
+  if(ck){
+    location.href="login/logout.php";
+  };
+};

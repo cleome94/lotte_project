@@ -1,0 +1,120 @@
+.term, .fb{
+    width:1000px;
+    margin:0 auto;
+    font-size: 12px
+}
+.term h2{
+    display:block;
+    width:203px;
+    height:36px;
+    background:url(../images/footer_logo.png) no-repeat;
+    text-indent:-9999px;
+    margin-top:35px
+}
+.term ul{
+    margin-top:29px;
+    display:flex
+}
+.term1{
+    margin-right:15px
+}
+.pi{
+    font-weight:bold;
+}
+.fb{
+    border-top:1px solid#c5c5c5;
+    margin-top:25px
+}
+.fb_txt1{
+    margin-top:31px;
+    display:flex;
+}
+.fb_txt1 address:after{
+    content:"I";
+    margin-left:9px
+}
+.fb_txt1 p{
+    margin-left:9px
+}
+.fb_txt2{
+    margin-top:10px;
+    margin-bottom:10px;
+    display:flex;
+}
+.fb_txt2 p{
+    margin-right:9px;
+}
+.fb_txt2 p:after{
+    content:"I";
+    margin-left:9px
+}
+.award{
+    margin-top:40px;
+    height:77px;
+    background-color: #d3d3d3;
+}
+.award ul{
+    width:1000px;
+    margin:0 auto;
+    display:flex;
+}
+.award li{
+    margin-top:18px;
+    margin-right:15px
+}
+.award1{
+    display:block;
+    width:107px;
+    height:42px;
+    background:url(../images/award01.png) no-repeat;
+    text-indent:-9999px 
+}
+.award2{
+    display:block;
+    width:131px;
+    height:42px;
+    background:url(../images/award02.png) no-repeat;
+    text-indent:-9999px 
+}
+.award3{
+    display:block;
+    width:127px;
+    height:42px;
+    background:url(../images/award03.png) no-repeat;
+    text-indent:-9999px 
+}
+.award4{
+    display:block;
+    width:129px;
+    height:42px;
+    background:url(../images/award04.png) no-repeat;
+    text-indent:-9999px 
+}
+.award5{
+    display:block;
+    width:91px;
+    height:42px;
+    background:url(../images/award05.png) no-repeat;
+    text-indent:-9999px 
+}
+.award6{
+    display:block;
+    width:112px;
+    height:42px;
+    background:url(../images/award06.png) no-repeat;
+    text-indent:-9999px 
+}
+.award7{
+    display:block;
+    width:86px;
+    height:42px;
+    background:url(../images/award07.png) no-repeat;
+    text-indent:-9999px 
+}
+.award8{
+    display:block;
+    width:123px;
+    height:42px;
+    background:url(../images/award08.png) no-repeat;
+    text-indent:-9999px 
+}

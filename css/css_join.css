@@ -321,23 +321,8 @@ input[type="checkbox"]:checked {
     top:-73px;
     left:511px
 }
-.phone select{
-    background:rgb(248, 248, 248);
-}
-.phone1{
-    width:105px;
-    height:42px;
-    border-radius:6px;
-    border:1px solid#000
-}
-.phone2{
-    width:60px;
-    height:42px;
-    border-radius:6px;
-    border:1px solid#000
-}
-.phone3{
-    width:170px;
+.phone{
+    width:340px;
     height:38px;
     border-radius:6px;
     border:1px solid#000;

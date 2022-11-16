@@ -48,7 +48,7 @@ function join_form_check(){
     var repwd = document.getElementById("repwd")
     var u_name = document.getElementById("u_name")
     var birth = document.getElementById("birth")
-    var phone3 = document.getElementById("phone3")
+    var phone = document.getElementById("phone")
 
     if(!u_id.value){
         alert("아이디를 입력하세요.");
@@ -94,13 +94,13 @@ function join_form_check(){
         alert("생년월일을 형식에 맞게 입력해주세요. ex)20220101");
         return false;
     };
-    if(!phone3.value){
+    if(!phone.value){
         alert("휴대폰 번호 뒷자리를 입력하세요.");
         return false;
     };
-    var regExp = /^[0-9]{6,8}/g;
-    if(!regExp.test(phone3.value)){
-        alert("휴대폰 번호 뒷자리를 모두 입력하세요.");
+    var regExp = /^[0-9]{9,11}/g;
+    if(!regExp.test(phone.value)){
+        alert("휴대폰 번호를 모두 입력하세요.");
         return false;
     };
     if(!ean.value){

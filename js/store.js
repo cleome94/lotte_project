@@ -56,3 +56,9 @@ function menu1_on(){
     menu3.setAttribute("class","menu3");
     menu4.setAttribute("class","menu4 on");
     };
+    function logout(){
+      var ck = confirm("로그아웃 하시겠습니까?");
+      if(ck){
+        location.href="login/logout.php";
+      };
+    };

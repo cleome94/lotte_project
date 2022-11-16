@@ -24,7 +24,9 @@ mysqli_query($dbcon, $sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../css/css_reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
     <link rel="stylesheet" type="text/css" href="../css/view.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <script src="../js/jquery-3.6.1.min.js"></script>
     <script src="../js/view.js"></script>
     <style>
@@ -47,7 +49,7 @@ mysqli_query($dbcon, $sql);
 </head>
 <body>
     <div class="wrap">
-    <?php include "../inc/header.html"; ?>
+    <?php include "../inc/header.php"; ?>
     <main id="content" class="content">
         <div class="notice_view">
             <h2>공지사항</h2>
@@ -105,7 +107,7 @@ mysqli_query($dbcon, $sql);
             </div>
         </div>
     </main>
-    <?php include "../inc/footer.html"; ?>
+    <?php include "../inc/footer.php"; ?>
     </div>
 </body>
 </html>
