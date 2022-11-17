@@ -25,7 +25,7 @@ mysqli_query($dbcon, $sql);
 mysqli_close($dbcon);
 echo "
     <script type=\"text/javascript\">
-        location.href=\"../cinema_notice.php\";
+        location.href=\"cinema_notice.php\";
     </script>
     ";
 ?>

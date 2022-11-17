@@ -3,10 +3,85 @@
     margin:auto;
     margin-top:210px
 }
-fieldset{
-    border:0
-}
-legend{
+form h2{
     font-size:24px;
+    font-weight:400;
+    margin-bottom:50px;
+    /* color: rgb(107, 107, 107) */
+}
+table{
+    width:400px;
+    margin-left:300px;
+    /* border-top:1px solid#393939; */
+    border-spacing:0;
+    font-size:16px;
+    text-align:left;
+}
+th, td{
     font-weight:500;
+    /* border-bottom:1px solid#393939; */
+    padding-left:10px;
+}
+th{
+    width:120px;
+    background:#eee;
+    padding:22px 0;
+    /* padding-right:22px; */
+    text-align:center;
+}
+td input{
+    width:270px;
+    height:30px;
+    box-sizing:border-box;
+    border-radius:6px;
+    border:1px solid#393939;
+}
+.btn{
+    margin-top:100px;
+    margin-left:309px;
+}
+.btn button{
+    width:100px;
+    height:40px;
+    border-radius:6px;
+    border:none;
+    box-sizing:border-box;
+    font-size:14px;
+    font-weight:bold;
+    color:#fff
+}
+.btn button:nth-child(1){
+    background:#3f3f3f;
+    margin-right:40px;
+}
+.btn button:nth-child(2){
+    background:#d32f2f;
+    margin-right:40px;
+}
+.btn button:nth-child(3){
+    background:#3f3f3f;
+}
+.ad_wrap{
+    clear:both;
+    margin-top:100px;
+    background:url(../images/ad_bg.jpg) repeat-x bottom;
+}
+.ad{
+    width:1000px;
+    margin:0 auto
+}
+.banner_ad1{
+    display:block;
+    width:1000px;
+    height:244px;
+    background:url(../images/login/banner_ad01.jpg) no-repeat;
+    text-indent:-9999px;
+    margin-top:50px
+}
+.banner_ad2{
+    display:block;
+    width:1000px;
+    height:244px;
+    background:url(../images/banner_ad.png) no-repeat;
+    text-indent:-9999px
 }

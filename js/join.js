@@ -110,5 +110,5 @@ function join_form_check(){
 
 };
 function id_search(){
-    window.open("../project/members/id_search.php", "idsch", "width=600, height=300");
+    window.open("id_search.php", "idsch", "width=600, height=300");
 };

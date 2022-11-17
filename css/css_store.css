@@ -30,17 +30,13 @@
     width:250px;
     height:60px;
     font-size:16px;
+    font-weight:bold;
     border:none;
     background:#fff;
     cursor:pointer
 }
-/* .menu button:hover{
-    color:#d32f2f;
-    font-weight:bold
-} */
 .on{
     color:#d32f2f;
-    font-weight:bold
 }
 #best{
     position:relative;
@@ -62,7 +58,7 @@
     margin-top:-35px;
     margin-bottom:60px;
     font-size:20px;
-    font-weight:500;
+    font-weight:400;
 }
 .best a{
     color:#fff
@@ -232,7 +228,7 @@
     margin-top:-35px;
     margin-bottom:60px;
     font-size:20px;
-    font-weight:500;
+    font-weight:400;
 }
 .ticket h3{
     font-size:16px;
@@ -317,7 +313,7 @@
     margin-top:-35px;
     margin-bottom:60px;
     font-size:20px;
-    font-weight:500;
+    font-weight:400;
 }
 .pc h3{
     font-size:16px;
@@ -464,7 +460,7 @@
     margin-top:-35px;
     margin-bottom:60px;
     font-size:20px;
-    font-weight:500;
+    font-weight:400;
 }
 .snack h3{
     font-size:16px;

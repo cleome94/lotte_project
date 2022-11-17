@@ -516,7 +516,17 @@
     height:26px;
     background:url(../images/login/membership.png) no-repeat;
     text-indent:-9999px;
-
+}
+.top_menu1_1{
+    width:108px;
+    margin-top:47px
+}
+.top_menu1_1 a{
+    display:block;
+    width:82px;
+    height:26px;
+    background:url(../images/login/myinfo.png) no-repeat;
+    text-indent:-9999px;
 }
 .top_menu2{
     width:136px;

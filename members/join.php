@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/css_reset.css">
-    <link rel="stylesheet" type="text/css" href="css/css_join.css">
-    <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/join.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/css_reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/css_join.css">
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/join.js"></script>
 </head>
 <body>
     <div class="wrap">
         <header id="header" class="header">
-            <h1 class="logo"><a href="index.php">롯데시네마</a></h1>
+            <h1 class="logo"><a href="../index.php">롯데시네마</a></h1>
             <h2>회원가입</h2>
         </header>
 
@@ -21,7 +21,7 @@
             <h3 class="blind">휴대폰 본인확인 동의란</h3>
                 
                 
-            <form class="form_wrap" name="join_form" action="members/join_insert.php" method="post" onsubmit="return join_form_check()">
+            <form class="form_wrap" name="join_form" action="join_insert.php" method="post" onsubmit="return join_form_check()">
                 <p class="cer1">회원가입을 위해 휴대폰 본인 인증해주세요.</p>
                 <fieldset class="form1">
                     <legend class="blind">휴대폰 본인확인 동의란</legend>

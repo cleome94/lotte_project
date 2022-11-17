@@ -191,11 +191,11 @@
 
                 <?php if(!$s_idx){ ?>
                     <div class="log_wrap">
-                        <button type="button" class="login" onclick="location.href='login.php'">로그인</button>
+                        <button type="button" class="login" onclick="location.href='login/login.php'">로그인</button>
                         <div class="join_bg"></div>
                         <p class="join1">로그인 하시고<br>
                         다양한 혜택을 확인하세요.</p>
-                        <button type="button" class="join2" onclick="location.href='join.php'">회원가입</button>
+                        <button type="button" class="join2" onclick="location.href='members/join.php'">회원가입</button>
                     </div>
                 <?php } else{ ?>
                     <div class="log_wrap">
@@ -226,16 +226,23 @@
 
         <div class="top_menu">
             <h2 class="blind">사용자메뉴</h2>
+            <?php if(!$s_idx){ ?>
             <ul class="top_menu_left">
-                <li class="top_menu1"><a href="join.php">회원가입</a></li>
+                <li class="top_menu1"><a href="members/join.php">회원가입</a></li>
                 <li class="top_menu2"><a href="#">바로예매 </a></li>
             </ul>
+            <?php } else{ ?>
+            <ul class="top_menu_left">
+                <li class="top_menu1_1"><a href="members/member_info.php">내정보</a></li>
+                <li class="top_menu2"><a href="#">바로예매 </a></li>
+            </ul>
+            <?php }; ?>
             <?php if(!$s_idx){ ?>
                 <ul class="top_menu_right">
                     <li class="top_menu3"><a href="#">멤버십</a></li>
                     <li class="top_menu4"><a href="#">고객센터</a></li>
                     <li class="top_menu5"><a href="#">단체관람/단체문의</a></li>
-                    <li class="top_menu6"><a href="login.php">로그인</a></li>
+                    <li class="top_menu6"><a href="login/login.php">로그인</a></li>
                 </ul>
             <?php } else{ ?>
                 <ul class="top_menu_right">

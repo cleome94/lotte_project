@@ -1,6 +1,6 @@
 <?php
-include "inc/session.php";
-include "inc/dbcon.php";
+include "../inc/session.php";
+include "../inc/dbcon.php";
 $sql = "select * from members";
 $result = mysqli_query($dbcon, $sql);
 $total = mysqli_num_rows($result);
@@ -12,16 +12,16 @@ $total = mysqli_num_rows($result);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/css_reset.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/css_login.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/login.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/css_reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/css_login.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/login.js"></script>
 </head>
 <body>
     <div class="wrap">
-    <?php include "header.php"; ?>
+    <?php include "../inc/header.php"; ?>
         <main id="content" class="content">
             <section class="menu_wrap hr">
                 <h2 class="blind">로그인 종류</h2>
@@ -37,7 +37,7 @@ $total = mysqli_num_rows($result);
                     <span class="login_line"></span>
                     <h2 class="blind">로그인</h2>
                     <p class="txt1">L.POINT, 롯데시네마 ID로 별도의 회원가입 없이 이용 가능 합니다.</p>
-                    <form class="log_form" action="login/login_ok.php" method="post" onsubmit="return form_check()">
+                    <form class="log_form" action="login_ok.php" method="post" onsubmit="return form_check()">
                         <p>
                             <input type="text" name="u_id" id="u_id" class="id" placeholder="아이디 또는 이메일을 입력해 주세요.">
                         </p>
@@ -56,7 +56,7 @@ $total = mysqli_num_rows($result);
                 </form>
                 </div>
                 <div class="join">
-                    <a class="join01" href="join.php">회원가입</a>
+                    <a class="join01" href="../join.php">회원가입</a>
                     <a class="join02" href="#">아이디 찾기</a>
                     <a class="join03" href="#">비밀번호 찾기</a>
                 </div>
@@ -194,7 +194,7 @@ $total = mysqli_num_rows($result);
             </div>
         </main>
 
-        <?php include "footer.php"; ?>
+        <?php include "../inc/footer.php"; ?>
     </div>
 </body>
 </html>

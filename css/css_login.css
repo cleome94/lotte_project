@@ -389,7 +389,7 @@ input[type="checkbox"]:checked {
     border-radius:6px;
     font-size:14px;
     text-align:right;
-    font-weight:bold;
+    font-weight:500;
     color:#383838;
     position:relative;
     margin-left:-540px;

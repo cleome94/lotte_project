@@ -33,6 +33,7 @@
     margin:auto;
     height: 57px;
     font-size:24px;
+    font-weight:400;
     color:#fff;
     display:block;
     position:relative
@@ -1278,7 +1279,7 @@
 }
 .prev h2{
     font-size:24px;
-    font-weight:bold;
+    font-weight:400;
     margin:0 auto 10px
 }
 .prev ul{
@@ -1367,13 +1368,14 @@
     margin:0 auto;
     padding-top:38px;
 }
+.event h2{
+    font-size:24px;
+    font-weight:400;
+    margin:0 auto 28px;
+}
 .event ul{
     width:1000px;
     display:flex;
-}
-.event h2{
-    font-size:24px;
-    margin:0 auto 28px;
 }
 .event a{
     color:#fff
@@ -1450,6 +1452,7 @@
 }
 .special h2{
     font-size:24px;
+    font-weight:400;
     margin-bottom:31px
 }
 .special ul{

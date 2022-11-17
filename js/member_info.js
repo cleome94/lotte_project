@@ -31,6 +31,12 @@ function edit_form_check(){
         };
     };
 };
+function logout(){
+    var ck = confirm("로그아웃 하시겠습니까?");
+    if(ck){
+      location.href="../login/logout.php";
+    };
+  };
 function mem_del(){
     var rtn_val = confirm("정말 탈퇴하시겠습니까?");
     if(rtn_val == true){

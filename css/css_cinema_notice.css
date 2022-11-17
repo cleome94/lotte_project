@@ -14,7 +14,8 @@
     cursor:pointer
 }
 .notice{
-    color:rgb(53, 53, 53);
+    font-size:24px;
+    font-weight:400
 }
 .tab1_btn{
     background:#888;

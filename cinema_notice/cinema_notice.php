@@ -1,6 +1,6 @@
 <?php
-include "inc/session.php";
-include "inc/dbcon.php";
+include "../inc/session.php";
+include "../inc/dbcon.php";
 $cate = isset($_GET["cate"])? $_GET["cate"] : "";
 $table_name = "cinema_notice";
 if($cate){
@@ -33,12 +33,12 @@ if($e_pageNum > $total_page){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/css_reset.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/css_cinema_notice.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/cinema_notice.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/css_reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/css_cinema_notice.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/cinema_notice.js"></script>
     <style>
         <?php if($s_id == "admin"){ ?>
             .total{
@@ -51,11 +51,11 @@ if($e_pageNum > $total_page){
 </head>
 <body>
     <div class="wrap">
-    <?php include "header.php"; ?>
+    <?php include "../inc/header.php"; ?>
     <main id="content" class="content">
         <div class="notice_wrap">
             <h2 class="notice">공지사항</h2>
-            <button type="button" id="tab1_btn" class="tab1_btn" onclick="location.href='notice.php'">전체 공지</button>
+            <button type="button" id="tab1_btn" class="tab1_btn" onclick="location.href='../notice/notice.php'">전체 공지</button>
             <button type="button" id="tab2_btn" class="tab2_btn">영화관 공지</button>
             <div class="line"></div>
         </div>
@@ -64,7 +64,7 @@ if($e_pageNum > $total_page){
             <?php if($s_id == "admin"){ ?>
             <p class="total">
                 <span>전체<em> <?php echo $total; ?></em>건</span>
-                <span><a class="write" href="cinema_notice/write.php">[글쓰기]</a></span>
+                <span><a class="write" href="write.php">[글쓰기]</a></span>
             </p>
             <?php } else{ ?>
                 <p class="total">전체<em> <?php echo $total; ?></em>건</p>
@@ -88,7 +88,7 @@ if($e_pageNum > $total_page){
                         <option value="">제목 + 내용</option>
                     </select>
 
-                    <input type="text" name="" id="" class="search2" placeholder="검색어를 입력해주세요.">
+                    <input type="text" name="search2" id="search2" class="search2" placeholder="검색어를 입력해주세요.">
                     <button type="button" class="search2_btn">검색</button>
                 </fieldset>
             </div>
@@ -138,7 +138,7 @@ if($e_pageNum > $total_page){
                             ?>
                         </td>
                         <td>
-                            <a href="cinema_notice/view.php?n_idx=<?php echo $array["idx"]; ?>">
+                            <a href="view.php?n_idx=<?php echo $array["idx"]; ?>">
                             <?php echo $array["n_title"]; ?>
                             </a>
                         </td>
@@ -184,7 +184,7 @@ if($e_pageNum > $total_page){
             </div>
         </div>
     </main>
-    <?php include "footer.php"; ?>
+    <?php include "../inc/footer.php"; ?>
     </div>
 </body>
 </html>

@@ -70,7 +70,7 @@ mysqli_close($dbcon);
                 <textarea cols="60" rows="10" id="n_content" name="n_content" class="n_content"><?php echo $array["n_content"]; ?></textarea>
             </p>
             <p>
-                <a href="../cinema_notice.php">목록</a>
+                <a href="cinema_notice.php">목록</a>
                 <button type="button" onclick="history.back()">이전 페이지</button>
                 <button type="submit">수정하기</button>
             </p>

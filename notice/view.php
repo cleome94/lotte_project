@@ -89,7 +89,7 @@ mysqli_query($dbcon, $sql);
                     </tr>
             </table>
             <p class="list">
-                <a href="../notice.php">목록</a>
+                <a href="notice.php">목록</a>
                 <?php if($s_id == "admin"){ ?>
                 <a href="modify.php?n_idx=<?php echo $n_idx; ?>">[수정]</a>
                 <a href="#" onclick="remove_notice()">[삭제]</a>

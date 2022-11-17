@@ -21,6 +21,7 @@
     width:1000px;
     margin:auto;
     font-size:22px;
+    font-weight:500;
     margin-top:35px;
 }
 .content{
@@ -202,7 +203,7 @@ input[type="checkbox"]:checked {
 }
 .content h3{
     font-size:18px;
-    font-weight:bold;
+    font-weight:500;
     margin-top:52px;
     margin-bottom:10px;
 }
@@ -222,7 +223,7 @@ input[type="checkbox"]:checked {
     border-radius:6px;
     border:1px solid#000;
     background:rgb(248, 248, 248);
-    font-size:14px;
+    font-size:12px;
 }
 .id{
     position:relative;
@@ -361,31 +362,26 @@ input[type="checkbox"]:checked {
     width:1000px;
     margin:auto
 }
-.cancle{
-    width:277px;
-    height:73px;
+.form3 button{
+    width:160px;
+    height:50px;
     border-radius:6px;
-    background:#3f3f3f;
     border:none;
-    font-size:20px;
+    font-size:16px;
     font-weight:500;
+    cursor:pointer
+}
+.cancle{
+    background:#3f3f3f;
     color:#fff;
-    cursor:pointer;
-    margin-top:72px;
-    margin-left:223px
+    margin-top:80px;
+    margin-left:320px
 }
 .join{
-    width:277px;
-    height:73px;
-    border-radius:6px;
     background:#c30000;
     box-sizing:border-box;
-    border:none;
-    font-size:20px;
-    font-weight:500;
     color:#fff;
-    cursor:pointer;
-    margin-left:20px
+    margin-left:40px
 }
 .footer{
     border-top: 1px solid #000

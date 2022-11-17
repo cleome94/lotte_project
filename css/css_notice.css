@@ -13,6 +13,10 @@
     margin-bottom:50px;
     cursor:pointer
 }
+.notice{
+    font-size:24px;
+    font-weight:400;
+}
 .tab1_btn{
     background:#d32f2f;
     border:1px solid #d32f2f;

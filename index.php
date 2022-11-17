@@ -345,7 +345,7 @@ $total = mysqli_num_rows($result);
                     </ul>
                 </div>
 
-                    <a class="notice_more" href="notice.php">더보기 ></a>
+                    <a class="notice_more" href="notice/notice.php">더보기 ></a>
                 </section>
             
             <div class="ad_wrap">
