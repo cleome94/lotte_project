@@ -1,6 +1,6 @@
 <?php
 include "../inc/session.php";
-include "../inc/admin_check.php";
+// include "../inc/admin_check.php";
 $n_idx = $_GET["n_idx"];
 $table_name = "cinema_notice";
 include "../inc/dbcon.php";
@@ -47,7 +47,8 @@ mysqli_close($dbcon);
     </script>
 </head>
 <body>
-<form name="cinema_notice_form" action="edit.php?n_idx=<?php echo $n_idx; ?>" method="post" enctype="multipart/form-data" onsubmit="return notice_check()">
+    <?php include "../inc/sub_header.html"; ?>
+    <form name="cinema_notice_form" action="edit.php?n_idx=<?php echo $n_idx; ?>" method="post" enctype="multipart/form-data" onsubmit="return notice_check()">
         <fieldset>
             <legend>공지사항</legend>
             <p>

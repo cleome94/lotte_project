@@ -1,7 +1,7 @@
 <?php
 include "../inc/session.php";
 $n_idx = $_GET["n_idx"];
-$sort = $_POST["sort"];
+$cate = $_POST["cate"];
 $n_title = $_POST["n_title"];
 $n_content = $_POST["n_content"];
 $w_date = date("Y-m-d");
@@ -13,8 +13,8 @@ if($_FILES["up_file"] != NULL){
     $f_type = $_FILES["up_file"]["type"];
     $f_size = $_FILES["up_file"]["size"];
     
-    $sql = "update notice set ";
-    $sql .= "sort='$sort',";
+    $sql = "update cinema_notice set ";
+    $sql .= "cate='$cate',";
     $sql .= "n_title='$n_title',";
     $sql .= "n_content='$n_content',";
     $sql .= "w_date='$w_date', ";
@@ -25,8 +25,8 @@ if($_FILES["up_file"] != NULL){
     /* echo $sql;
     exit; */
 } else{
-    $sql = "update notice set ";
-    $sql .= "sort='$sort',";
+    $sql = "update cinema_notice set ";
+    $sql .= "cate='$cate',";
     $sql .= "n_title='$n_title',";
     $sql .= "n_content='$n_content',";
     $sql .= "w_date='$w_date' ";
@@ -36,8 +36,8 @@ if($_FILES["up_file"] != NULL){
 };
 include "../inc/dbcon.php";
 
-/* echo "<p> idx : ".$n_idx."</p>;
-echo "<p> 구분 : ".$sort."</p>";
+/* echo "<p> idx : ".$n_idx."</p>";
+echo "<p> 구분 : ".$cate."</p>";
 echo "<p> 제목 : ".$n_title."</p>";
 echo "<p> 내용 : ".$n_content."</p>";
 echo "<p> 작성일 : ".$w_date."</p>";

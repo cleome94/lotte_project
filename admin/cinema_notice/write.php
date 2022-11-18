@@ -1,6 +1,6 @@
 <?php
 include "../inc/session.php";
-include "../inc/admin_check.php";
+include "../inc/login_check.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,13 +17,13 @@ include "../inc/admin_check.php";
     </style>
     <script type="text/javascript">
         function notice_check(){
-            var sort = document.getElementById("sort")
+            var cate = document.getElementById("cate")
             var n_title = document.getElementById("n_title")
             var n_content = document.getElementById("n_content")
 
-            if(!sort.value){
+            if(!cate.value){
                 alert("구분을 입력하세요.");
-                sort.focus();
+                cate.focus();
                 return false;
             };
             if(!n_title.value){
@@ -40,15 +40,25 @@ include "../inc/admin_check.php";
     </script>
 </head>
 <body>
-    <form name="notice_form" action="insert.php" method="post" enctype="multipart/form-data" onsubmit="return notice_check()">
+    <?php include "../inc/sub_header.html"; ?>
+    <form name="cinema_notice_form" action="insert.php" method="post" enctype="multipart/form-data" onsubmit="return notice_check()">
         <fieldset>
             <legend>공지사항</legend>
             <p>
                 작성자 <?php echo $s_name; ?>
             </p>
             <p>
-                <label for="sort">구분</label>
-                <input type="text" id="sort" name="sort" class="sort" value="전체">
+                <label for="cate">구분</label>
+                <select name="cate" id="cate" class="cate">
+                    <option value="b">서울</option>
+                    <option value="c">경기/인천</option>
+                    <option value="d">충청/대전</option>
+                    <option value="e">전라/광주</option>
+                    <option value="f">경북/대구</option>
+                    <option value="g">경남/부산/울산</option>
+                    <option value="h">강원</option>
+                    <option value="i">제주</option>
+                </select>
             </p>
             <p>
                 <label for="n_title">제목</label>

@@ -8,7 +8,7 @@ mysqli_close($dbcon);
 echo"
     <script type=\"text/javascript\">
         alert(\"정상 처리되었습니다.\");
-        location.href=\"cinema_notice.php\";
+        location.href=\"list.php\";
     </script>;
 "
 ?>

@@ -81,6 +81,16 @@ mysqli_query($dbcon, $sql);
                     <tr>
                         <td colspan="2" class="v_text">
                         <?php
+                        if($array["f_name"] && substr($array["f_type"], 0, 5) == "image"){
+                            $f_name = $array["f_name"];
+                            echo "
+                                <p>
+                                    <img src=\"../data/$f_name\" alt=\"\">
+                                </p>
+                            ";
+                        }
+                        ?>
+                        <?php
                         $n_content = str_replace("\n","<br>", $array["n_content"]);
                         $n_content = str_replace(" ","&nbsp;", $n_content);
                         echo $n_content;
@@ -91,8 +101,8 @@ mysqli_query($dbcon, $sql);
             <p class="list">
                 <a href="notice.php">목록</a>
                 <?php if($s_id == "admin"){ ?>
-                <a href="modify.php?n_idx=<?php echo $n_idx; ?>">[수정]</a>
-                <a href="#" onclick="remove_notice()">[삭제]</a>
+                <a href="modify.php?n_idx=<?php echo $n_idx; ?>">수정</a>
+                <a href="#" onclick="remove_notice()">삭제</a>
                 <?php }; ?>
             </p>
         </section>

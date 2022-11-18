@@ -41,11 +41,11 @@ $array = mysqli_fetch_array($result);
                         </tr>
                         <tr>
                             <th><label for="pwd">비밀번호</label></th>
-                            <td><input type="passward" name="pwd" id="pwd"></td>
+                            <td><input type="password" name="pwd" id="pwd"></td>
                         </tr>
                         <tr>
                             <th><label for="repwd">비밀번호 확인</label></th>
-                            <td><input type="passward" name="repwd" id="repwd"></td>
+                            <td><input type="password" name="repwd" id="repwd"></td>
                         </tr>
                         <?php
                             $birth = str_replace("-", "", $array["birth"]);

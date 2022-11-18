@@ -1,6 +1,6 @@
 <?php
 include "../inc/session.php";
-include "../inc/admin_check.php";
+include "../inc/login_check.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +40,7 @@ include "../inc/admin_check.php";
     </script>
 </head>
 <body>
+    <?php include "../inc/sub_header.html"; ?>
     <form name="notice_form" action="insert.php" method="post" enctype="multipart/form-data" onsubmit="return notice_check()">
         <fieldset>
             <legend>공지사항</legend>

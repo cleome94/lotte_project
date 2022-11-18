@@ -1,6 +1,6 @@
 <?php
 include "../inc/session.php";
-// include "../inc/admin_check.php";
+include "../inc/admin_check.php";
 $n_idx = $_GET["n_idx"];
 include "../inc/dbcon.php";
 $sql = "select * from notice where idx=$n_idx;";
@@ -15,6 +15,12 @@ mysqli_close($dbcon);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
+    <style>
+        body{
+            width:1000px;
+            margin:0 auto;
+        }
+    </style>
     <script type="text/javascript">
         function notice_check(){
             var sort = document.getElementById("sort")
@@ -40,7 +46,7 @@ mysqli_close($dbcon);
     </script>
 </head>
 <body>
-<form name="notice_form" action="edit.php?n_idx=<?php echo $n_idx; ?>" method="post" onsubmit="return notice_check()">
+<form name="notice_form" action="edit.php?n_idx=<?php echo $n_idx; ?>" method="post" enctype="multipart/form-data" onsubmit="return notice_check()">
         <fieldset>
             <legend>공지사항</legend>
             <p>
@@ -52,11 +58,15 @@ mysqli_close($dbcon);
             </p>
             <p>
                 <label for="n_title">제목</label>
-                <input type="text" id="n_title" name="n_title" class="n_title" value="<?php echo $array["n_title"]; ?>">
+                <input type="text" id="n_title" name="n_title" class="n_title" size="90" value="<?php echo $array["n_title"]; ?>">
             </p>
             <p>
                 <label for="n_content">내용</label>
-                <textarea cols="60" rows="10" id="n_content" name="n_content" class="n_content"><?php echo $array["n_content"]; ?></textarea>
+                <textarea cols="100" rows="30" id="n_content" name="n_content" class="n_content"><?php echo $array["n_content"]; ?></textarea>
+            </p>
+            <p>
+                <label for="up_file">첨부파일 [<?php echo $array["f_name"]; ?>]</label>
+                <input type="file" name="up_file" id="up_file">
             </p>
             <p>
                 <button type="button" onclick="history.back()">이전 페이지</button>

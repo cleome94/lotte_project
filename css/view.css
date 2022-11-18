@@ -54,7 +54,7 @@ table, td{
     margin-top:50px;
     text-align:center
 }
-.list a:first-child{
+.list a:nth-child(1){
     display:inline-block;
     width:120px;
     height:50px;
@@ -65,6 +65,32 @@ table, td{
     border:none;
     font-size:16px;
     color:#fff
+}
+.list a:nth-child(2){
+    display:inline-block;
+    width:120px;
+    height:50px;
+    padding-top:13px;
+    background:#2875ce;
+    border-radius:6px;
+    box-sizing:border-box;
+    border:none;
+    font-size:16px;
+    color:#fff;
+    margin-left:10px
+}
+.list a:nth-child(3){
+    display:inline-block;
+    width:120px;
+    height:50px;
+    padding-top:13px;
+    background:#393939;
+    border-radius:6px;
+    box-sizing:border-box;
+    border:none;
+    font-size:16px;
+    color:#fff;
+    margin-left:10px
 }
 .ad_wrap{
     clear:both;

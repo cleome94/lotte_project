@@ -101,6 +101,16 @@ mysqli_query($dbcon, $sql);
                 <tr class="notice_view_content">
                     <td colspan="2" class="v_text">
                     <?php
+                    if($array["f_name"] && substr($array["f_type"], 0, 5) == "image"){
+                        $f_name = $array["f_name"];
+                        echo "
+                            <p>
+                                <img src=\"../data/$f_name\" alt=\"\">
+                            </p>
+                        ";
+                    }
+                    ?>
+                    <?php
                     $n_content = str_replace("\n","<br>", $array["n_content"]);
                     $n_content = str_replace(" ","&nbsp;", $n_content);
                     echo $n_content;
