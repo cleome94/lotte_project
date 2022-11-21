@@ -9,6 +9,24 @@
     position:relative;
     margin-top:138px
 }
+#main_video1 { 
+    background-color:#fff;
+    border-radius:15px;
+    color:#000;
+    display:none; 
+    padding:20px;
+    min-width:400px;
+    min-height: 180px;
+}
+#main_video2 { 
+    background-color:#fff;
+    border-radius:15px;
+    color:#000;
+    display:none; 
+    padding:20px;
+    min-width:400px;
+    min-height: 180px;
+}
 .ro_bg{
     background:#000;
     width:100%;
@@ -1416,7 +1434,7 @@
 }
 .event5{
     display:block;
-    width:481px;
+    width:490px;
     height:177px;
     background:url(../images/event_image05.png) no-repeat;
     text-indent:-9999px;
@@ -1430,7 +1448,7 @@
     background:url(../images/event_image06.png) no-repeat;
     text-indent:-9999px;
     margin-top:117px;
-    margin-left:-489px;
+    margin-left:-498px;
 }
 .event_more{
     display:block;
@@ -1626,7 +1644,7 @@
     font-size:14px;
     height:30px;
     padding:5px;
-    margin:-4px 0px 5px;
+    margin:-3px 0px 0px;
 }
 .notice_more{
     display:block;
@@ -1635,7 +1653,7 @@
     background:url(../images/prev_more.png)no-repeat;
     text-indent:-9999px;
     float:right;
-    margin-top:-40px;
+    margin-top:-35px;
 
 }
 .ad_wrap{

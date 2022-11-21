@@ -76,7 +76,7 @@ mysqli_close($dbcon);
     </script>
 </head>
 <body>
-<form name="product_form" action="insert.php" method="post" enctype="multipart/form-data" onsubmit="return product_check()">
+<form name="product_form" action="edit.php?n_idx=<?php echo $n_idx; ?>" method="post" enctype="multipart/form-data" onsubmit="return product_check()">
         <fieldset>
             <legend>스토어</legend>
             <p>
@@ -84,38 +84,42 @@ mysqli_close($dbcon);
             </p>
             <p>
                 <label for="p_name">제품이름</label>
-                <input type="text" id="p_name" name="p_name" class="p_name" size="40">
+                <input type="text" id="p_name" name="p_name" class="p_name" size="40" value="<?php echo $array["p_name"]; ?>">
             </p>
             <p>
                 <label for="f_price">정가</label>
-                <input type="text" id="f_price" name="f_price" class="f_price" size="40">
+                <input type="text" id="f_price" name="f_price" class="f_price" size="40" value="<?php echo $array["f_price"]; ?>">
+            </p>
+            <p>
+                <label for="per">세일 %</label>
+                <input type="text" id="per" name="per" class="per" size="40" value="<?php echo $array["per"]; ?>">
             </p>
             <p>
                 <label for="s_price">세일가</label>
-                <input type="text" id="s_price" name="s_price" class="s_price" size="40">
+                <input type="text" id="s_price" name="s_price" class="s_price" size="40" value="<?php echo $array["s_price"]; ?>">
             </p>
             <p>
                 <label for="com">구성품</label>
-                <textarea cols="70" rows="2" id="com" name="com" class="com"></textarea>
+                <textarea cols="70" rows="2" id="com" name="com" class="com" value="<?php echo $array["com"]; ?>"></textarea>
             </p>
             <p>
                 <label for="pr">구매제한</label>
-                <input type="text" id="pr" name="pr" class="pr">
+                <input type="text" id="pr" name="pr" class="pr" value="<?php echo $array["pr"]; ?>">
             </p>
             <p>
                 <label for="validity">유효기간</label>
-                <input type="text" id="validity" name="validity" class="validity">
+                <input type="text" id="validity" name="validity" class="validity" value="<?php echo $array["validity"]; ?>">
             </p>
             <p>
                 <label for="htu">사용방법</label>
-                <textarea cols="100" rows="30" id="htu" name="htu" class="htu"></textarea>
+                <textarea cols="100" rows="30" id="htu" name="htu" class="htu"><?php echo $array["htu"]; ?></textarea>
             </p>
             <p>
                 <label for="prec">유의사항</label>
-                <textarea cols="100" rows="30" id="prec" name="prec" class="prec"></textarea>
+                <textarea cols="100" rows="30" id="prec" name="prec" class="prec"><?php echo $array["prec"]; ?></textarea>
             </p>
             <p>
-                <label for="up_file">파일첨부</label>
+                <label for="up_file">파일첨부[<?php echo $array["f_name"]; ?>]</label>
                 <input type="file" name="up_file" id="up_file">
             </p>
             <p>

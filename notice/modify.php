@@ -54,7 +54,7 @@ mysqli_close($dbcon);
             </p>
             <p>
                 <label for="sort">구분</label>
-                <input type="text" id="sort" name="sort" class="sort" value="<?php echo $array["sort"] ?>">
+                <input type="text" id="sort" name="sort" class="sort" value="<?php echo $array["sort"]; ?>">
             </p>
             <p>
                 <label for="n_title">제목</label>

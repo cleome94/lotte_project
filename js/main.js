@@ -12,11 +12,46 @@ $(document).ready(function(){
         $(".main_menu_wrap").hide();
     });
 
-    $('.main_image').bxSlider({
+    $('.main_image').slick({
       mode:"fade",
-      auto:true,
-      autoplaySpeed:5000,
+      dots:true,
+      autoplay:true,
+      autoplaySpeed:3000,
     });
+
+    $(function() {
+      $('#main1').bind('click', function(e) {
+  var self = $(this)
+  , content = $('.content'); 
+  $('main_video1').bPopup({
+      onOpen: function() {
+          content.html(self.data('bpopup') || '');
+      },
+      onClose: function() {
+          content.empty();
+      }
+  }); 
+          e.preventDefault();
+          $('#main_video1').bPopup();
+      });
+  });
+  
+  $(function() {
+    $('#main2').bind('click', function(e) {
+var self = $(this)
+, content = $('.content'); 
+$('main_video2').bPopup({
+    onOpen: function() {
+        content.html(self.data('bpopup') || '');
+    },
+    onClose: function() {
+        content.empty();
+    }
+}); 
+        e.preventDefault();
+        $('#main_video2').bPopup();
+    });
+});
 
     $(".movie1").hover(function(){
       $(".bg1").toggle();
@@ -118,12 +153,22 @@ $(document).ready(function(){
         ]
     });
 
-    function tick(){
+    /* function tick(){
       $('.notice_title li:first').slideUp(function(){
         $(this).appendTo($('.notice_title')).slideDown();
       });
     }
+    setInterval(function(){tick()}, 3000); */
+
+    function tick(){
+      $('.notice_title li:first').fadeOut(function(){
+        $(this).appendTo($('.notice_title')).fadeIn(100);
+      });
+    }
     setInterval(function(){tick()}, 5000);
+
+    /* $('.notice_list').vTicker({height:30}); */
+
   });
   function logout(){
     var ck = confirm("로그아웃 하시겠습니까?");

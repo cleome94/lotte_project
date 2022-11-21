@@ -4,8 +4,10 @@ $n_idx = $_GET["n_idx"];
 $table_name = "product";
 include "../inc/dbcon.php";
 $sql = "select * from $table_name where idx=$n_idx;";
+/* echo $sql;
+exit; */
 $result = mysqli_query($dbcon, $sql);
-$total = mysqli_num_rows($result);
+$total = mysqli_fetch_array($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,18 +22,35 @@ $total = mysqli_num_rows($result);
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <script src="../js/jquery-3.6.1.min.js"></script>
     <script src="../js/best01.js"></script>
-    <script>
-
-    </script>
+    <style>
+        <?php if($s_id == "admin"){ ?>
+        .write_area{
+            width:1000px;
+            display:flex;
+            flex-direction:row-reverse
+        }
+        <?php }; ?>
+    </style>
 </head>
 <body>
     <div class="wrap">
-    <?php include "header.php"; ?>
+    <?php include "../inc/header.php"; ?>
 
         <main id="content" class="content">
             <div class="pd_wrap">
                 <section>
-                    <h3 class="pd1"><?php echo $_FILES; ?></h3>
+                    <h3 class="pd1">
+                        <?php
+                        if($array["f_name"] && substr($array["f_type"], 0, 5) == "image"){
+                            $f_name = $array["f_name"];
+                            echo "
+                                <p>
+                                    <img src=\"../data/$f_name\" alt=\"\">
+                                </p>
+                            ";
+                        };
+                        ?>
+                    </h3>
                     <table class="pd_table">
                             <tr>
                                 <th class="tit" colspan="2"><?php echo $array["p_name"]; ?></th>
@@ -102,7 +121,7 @@ $total = mysqli_num_rows($result);
             </div>
         </main>
 
-        <?php include "footer.php"; ?>
+        <?php include "../inc/footer.php"; ?>
     </div>
 </body>
 </html>

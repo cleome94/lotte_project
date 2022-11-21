@@ -23,26 +23,32 @@ $total = mysqli_num_rows($result);
     <script src="js/main.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="slick/slick.min.js"></script>
+    <script src="js/jquery.bpopup-0.10.0.min.js"></script>
+    <script src="js/jquery.vticker.min.js"></script>
     
 </head>
 <body>
     <div class="wrap">
         <?php include "header.php"; ?>
 
-        <main id="content" class="content">
+        <main id="contents" class="contents">
             <div class="main_bg">
                 <section class="main_wrap">
                 <h2 class="blind">영화 주요 소식</h2>
                 <ul class="main_image">
-                    <li><a href="#">
-                        <img src="images/main_image01.jpg" alt="겨울왕국, 엔칸토 제작진 디즈니 스트레인지 월드 11월 23일 대개봉">
-                    </a>
+                    <li>
+                        <a href="#none">
+                        <img id="main1" src="images/main_image01.jpg" data-video="https://caching2.lottecinema.co.kr/lotte_image/2022/ST/1110/ST_1280720.mp4" alt="겨울왕국, 엔칸토 제작진 디즈니 스트레인지 월드 11월 23일 대개봉">
+                        </a>
                     </li>
-                    <li><a href="#">
-                            <img src="images/main_image02.jpg" alt="끝까지 싸워 살아남아라! 킹덤2 아득한 대지로 2022년 11월 16일 개봉">
+                    <li>
+                        <a href="#none">
+                        <img id="main2" src="images/main_image02.jpg" alt="네모 바이러스의 습격! 친구들을 구하라! <뽀로로와 친구들 극장판> 바이러스를 없애줘! 12월 1일 롯데시네마에서 만나요!">
                         </a>
                     </li>
                 </ul>
+                    <iframe id="main_video1" width="800" height="460" src="https://caching2.lottecinema.co.kr/lotte_image/2022/ST/1110/ST_1280720.mp4?autoplay=1" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+                    <iframe id="main_video2" width="800" height="460" src="https://caching2.lottecinema.co.kr/lotte_image/2022/boo/boo_1280720.mp4?autoplay=1" frameborder="0" allowfullscreen allow="autoplay"></iframe>
                 </section>
             </div>
             <div class="ro_bg">
@@ -339,9 +345,9 @@ $total = mysqli_num_rows($result);
                 <h2><a href="#">공지사항</a></h2>
                 <div class="notice_list">
                     <ul class="notice_title">
-                        <li><a href="#">영화관람권 가격 변경 안내</a></li>
-                        <li><a href="#">2D 일반 관람권 활용 스페셜관 이용 안내</a></li>
-                        <li><a href="#">롯데시네마 영구VIP 서비스 종료 안내</a></li>
+                        <li><a href="notice/view.php?n_idx=30">영화관람권 가격 변경 안내</a></li>
+                        <li><a href="notice/view.php?n_idx=29">2D 일반 관람권 활용 스페셜관 이용 안내</a></li>
+                        <li><a href="notice/view.php?n_idx=31">롯데시네마 영구VIP 서비스 종료 안내</a></li>
                     </ul>
                 </div>
 

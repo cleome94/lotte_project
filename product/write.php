@@ -85,6 +85,10 @@ include "../inc/admin_check.php";
                 <input type="text" id="f_price" name="f_price" class="f_price" size="40">
             </p>
             <p>
+                <label for="per">세일 %</label>
+                <input type="text" id="per" name="per" class="per" size="40">
+            </p>
+            <p>
                 <label for="s_price">세일가</label>
                 <input type="text" id="s_price" name="s_price" class="s_price" size="40">
             </p>
