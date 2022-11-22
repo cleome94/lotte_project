@@ -18,18 +18,9 @@ $num = mysqli_num_rows($result);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"<?php echo $u_id; ?>"검색 결과</title>
-    <style>
-        .id_txt{font-weight:bold}
-        .able{font-weight:bold;color:blue}
-        .unable{font-weight:bold;color:red}
-    </style>
-    <script type="text/javascript">
-        function return_id(){
-            opener.document.getElementById("u_id").value = "<?php echo $u_id; ?>";
-            window.close();
-        };
-    </script>
+    <title>관리자페이지 "<?php echo $u_id; ?>"검색 결과 - 롯데시네마</title>
+    <link rel="stylesheet" type="text/css" href="../../css/id_search_result.css">
+    <script src="../../js/id_search_result.js"></script>
 </head>
 <body>
     <?php if(!$num){ ?>

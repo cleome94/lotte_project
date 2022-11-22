@@ -345,9 +345,9 @@ $total = mysqli_num_rows($result);
                 <h2><a href="#">공지사항</a></h2>
                 <div class="notice_list">
                     <ul class="notice_title">
-                        <li><a href="notice/view.php?n_idx=30">영화관람권 가격 변경 안내</a></li>
-                        <li><a href="notice/view.php?n_idx=29">2D 일반 관람권 활용 스페셜관 이용 안내</a></li>
-                        <li><a href="notice/view.php?n_idx=31">롯데시네마 영구VIP 서비스 종료 안내</a></li>
+                        <li><a href="notice/view.php?n_idx=1">영화관람권 가격 변경 안내</a></li>
+                        <li><a href="notice/view.php?n_idx=2">2D 일반 관람권 활용 스페셜관 이용 안내</a></li>
+                        <li><a href="notice/view.php?n_idx=3">롯데시네마 영구VIP 서비스 종료 안내</a></li>
                     </ul>
                 </div>
 

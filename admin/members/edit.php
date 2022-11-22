@@ -1,5 +1,6 @@
 <?php
 include "../inc/session.php";
+$g_idx = $_POST["g_idx"];
 $pwd = $_POST["pwd"];
 $birth = $_POST["birth"];
 $phone = $_POST["phone"];
@@ -12,13 +13,13 @@ $sql ="update members set ";
 $sql .="pwd='$pwd', ";
 $sql .="birth='$birth', ";
 $sql .="phone='$phone' ";
-$sql .="where idx=$s_idx;";
+$sql .="where idx=$g_idx;";
 /* echo $sql; */
 
 $sql_nPwd ="update members set ";
 $sql_nPwd .="birth='$birth', ";
 $sql_nPwd .="phone='$phone' ";
-$sql_nPwd .="where idx=$s_idx;";
+$sql_nPwd .="where idx=$g_idx;";
 echo $sql_nPwd;
 
 if($pwd){
@@ -31,7 +32,7 @@ mysqli_close($dbcon);
 echo"
     <script type=\"text/javascript\">
         alert(\"수정되었습니다.\");
-        location.href=\"member_info.php\";
+        location.href=\"member_info.php?g_idx=$g_idx\";
     </script>;
 "
 ?>

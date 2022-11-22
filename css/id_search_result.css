@@ -1,0 +1,30 @@
+.id_txt{
+    font-weight:bold
+}
+.able{
+    font-weight:bold;color:blue
+}
+.unable{
+    font-weight:bold;color:red
+}
+p{
+    text-align:center;
+    padding:10px 0;
+}
+p:nth-child(1){
+    border-bottom:2px solid#d32f2f;
+}
+a{
+    padding:10px;
+    position:relative;
+    top:15px;
+    margin-right:20px;
+    border-radius:5px;
+}
+p a:nth-child(1){
+    background:#eee;
+}
+p a:nth-child(2){
+    background:#d32f2f;
+    color:#fff
+}

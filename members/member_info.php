@@ -12,7 +12,7 @@ $array = mysqli_fetch_array($result);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>내정보 조회 / 수정 - 롯데시네마</title>
     <link rel="stylesheet" type="text/css" href="../css/css_reset.css">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
     <link rel="stylesheet" type="text/css" href="../css/member_info.css">

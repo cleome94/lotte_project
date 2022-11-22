@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이디 검색</title>
+    <title>관리자 페이지 아이디 검색 - 롯데시네마</title>
 </head>
 <body>
     <form name="id_search_form" action="id_search_result.php" method="post">

@@ -227,7 +227,7 @@ input[type="checkbox"]:checked {
 }
 .id{
     position:relative;
-    top:7px;
+    top:27px;
     left:84px
 }
 .id span{
@@ -253,7 +253,7 @@ input[type="checkbox"]:checked {
 }
 .pw1{
     position:relative;
-    top:30px;
+    top:50px;
     left:68px
 }
 .pw1 span{
@@ -267,8 +267,8 @@ input[type="checkbox"]:checked {
 }
 .pw2{
     position:relative;
-    top:54px;
-    left:34px
+    top:74px;
+    left:36px
 }
 .pw2 span{
     position:relative;
@@ -281,7 +281,7 @@ input[type="checkbox"]:checked {
 }
 .name{
     position:relative;
-    top:-119px;
+    top:-99px;
     left:560px
 }
 .form2_n4{
@@ -299,8 +299,8 @@ input[type="checkbox"]:checked {
 }
 .birth1{
     position:relative;
-    top:-96px;
-    left:530px
+    top:-76px;
+    left:533px
 }
 .form2_n5{
     position:relative;
@@ -319,8 +319,8 @@ input[type="checkbox"]:checked {
 }
 .phone_no{
     position:relative;
-    top:-73px;
-    left:511px
+    top:-53px;
+    left:515px
 }
 .phone{
     width:340px;
@@ -330,33 +330,11 @@ input[type="checkbox"]:checked {
     position:relative;
     top:1px
 }
-.an{
-    position:relative;
-    top:-52px;
-    left:585px
-}
-.an_btn{
-    width:100px;
-    height:42px;
-    border-radius:6px;
-    background:#fff;
-    border:1px solid#000;
-    color:#d32f2f;
-    font-weight:bold;
-    position:relative;
-    top:1px;
-    cursor:pointer
-}
-.ean{
-    width:242px;
-    height:38px;
-    margin-top:3px;
-}
 .cer2{
     font-size:14px;
     font-weight:500;
     text-align:center;
-    margin-top:-37px
+    margin-top:-17px
 }
 .form3{
     width:1000px;

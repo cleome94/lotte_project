@@ -15,36 +15,9 @@ mysqli_close($dbcon);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지사항</title>
-    <style>
-        body{
-            width:1000px;
-            margin:0 auto;
-        }
-    </style>
-    <script type="text/javascript">
-        function notice_check(){
-            var cate = document.getElementById("sort")
-            var n_title = document.getElementById("n_title")
-            var n_content = document.getElementById("n_content")
-
-            if(!cate.value){
-                alert("구분을 입력하세요.");
-                cate.focus();
-                return false;
-            };
-            if(!n_title.value){
-                alert("제목을 입력하세요.");
-                n_title.focus();
-                return false;
-            };
-            if(!n_content.value){
-                alert("내용을 입력하세요.");
-                n_content.focus();
-                return false;
-            };
-        };
-    </script>
+    <title>관리자 페이지 영화관 공지 수정 - 롯데시네마</title>
+    <link rel="stylesheet" type="text/css" href="../../css/body.css">
+    <script src="../../js/cinema_notice_write.js"></script>
 </head>
 <body>
     <?php include "../inc/sub_header.html"; ?>

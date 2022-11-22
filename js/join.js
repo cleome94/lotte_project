@@ -103,12 +103,8 @@ function join_form_check(){
         alert("휴대폰 번호를 모두 입력하세요.");
         return false;
     };
-    if(!ean.value){
-        alert("인증번호를 입력하세요.");
-        return false;
-    };
 
 };
 function id_search(){
-    window.open("id_search.php", "idsch", "width=600, height=300");
+    window.open("id_search.php", "idsch", "width=400, height=200");
 };

@@ -4,24 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>관리자페이지 로그인</title>
-    <script>
-        function login_form_check(){
-            var u_id = document.getElementById("u_id");
-            var pwd = document.getElementById("pwd");
-
-            if(!u_id.value){
-                alert("아이디를 입력하세요.");
-                u_id.focus();
-                return false;
-            };
-            if(!pwd.value){
-                alert("비밀번호를 입력하세요.");
-                pwd.focus();
-                return false;
-            };
-        };
-    </script>
+    <title>관리자페이지 로그인 - 롯데시네마</title>
+    <script src="../../js/admin_login.js"></script>
 </head>
 <body>
     <h2>로그인</h2>

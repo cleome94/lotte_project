@@ -32,56 +32,10 @@ if($e_pageNum > $total_page){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            width:1000px;
-            margin:0 auto
-        }
-        a{
-            text-decoration:none;
-            margin:0 5px
-        }
-        .total{
-            width:1000px;
-            display:flex;
-            justify-content:space-between
-        }
-        table{
-            width:1000px;
-            border-collapse: collapse;
-            border-spacing: 0;
-            font-size:14px;
-            text-align:center;
-        }
-        caption{
-            padding:10px;
-        }
-        th{
-            border-bottom: 1px solid #292929;
-            padding: 11px;
-        }
-        td{
-            border-bottom: 1px solid #ebebeb;
-            padding: 11px;
-        }
-        .pager{
-            text-align:center
-        }
-    </style>
-    <script>
-        function sel_cate(){
-            var cate = document.getElementById("movieArea");
-            var idx = cate.options.selectedIndex;
-            var sel_cate_val = cate.options[idx].value;
-
-            if(idx == 0){
-                location.href="list.php";
-            } else{
-                location.href="list.php?cate="+sel_cate_val;
-            };
-        };
-    </script>
+    <title>관리자 페이지 공지사항 목록 - 롯데시네마</title>
+    <link rel="stylesheet" type="text/css" href="../../css/body.css">
+    <link rel="stylesheet" type="text/css" href="../../css/admin_list.css">
+    <script src="../../js/admin_cinema_notice.js"></script>
 </head>
 <body>
     <?php include "../inc/sub_header.html"; ?>

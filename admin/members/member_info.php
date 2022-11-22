@@ -13,34 +13,10 @@ $array = mysqli_fetch_array($result);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>관리자페이지 회원정보</title>
-    <style>
-        body{
-            width:1000px;
-            margin:0 auto;
-        }
-    </style>
+    <title>관리자페이지 회원정보 조회 / 수정 - 롯데시네마</title>
+    <link rel="stylesheet" type="text/css" href="../../css/body.css">
+    <script src="../../js/admin_member_info.js"></script>
     <script type="text/javascript">
-        function edit_form_check(){
-            var pwd = document.getElementById("pwd");
-            var repwd = document.getElementById("repwd");
-
-            if(pwd.value){
-                var pw_len = pwd.value.length;
-                if(pw_len < 6 || pw_len > 12){
-                    alert("비밀번호는 6~12글자만 입력할 수 있습니다.");
-                    pwd.focus();
-                    return false;
-                };
-            };
-            if(pwd.value){
-                if(pwd.value != repwd.value){
-                    alert("비밀번호를 확인해 주세요.");
-                    repwd.focus();
-                    return false;
-                };
-            };
-        };
         function mem_del(){
             var rtn_val = confirm("정말 삭제하시겠습니까?");
             if(rtn_val == true){

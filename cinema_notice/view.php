@@ -22,7 +22,7 @@ mysqli_query($dbcon, $sql);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>영화관 공지 상세 - 롯데시네마</title>
     <link rel="stylesheet" type="text/css" href="../css/css_reset.css">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
     <link rel="stylesheet" type="text/css" href="../css/view.css">
@@ -121,8 +121,8 @@ mysqli_query($dbcon, $sql);
             <p class="list">
                 <a href="cinema_notice.php">목록</a>
                 <?php if($s_id == "admin"){ ?>
-                <a href="modify.php?n_idx=<?php echo $n_idx; ?>">[수정]</a>
-                <a href="#" onclick="remove_notice()">[삭제]</a>
+                <a href="modify.php?n_idx=<?php echo $n_idx; ?>">수정</a>
+                <a href="#" onclick="remove_notice()">삭제</a>
                 <?php }; ?>
             </p>
         </section>

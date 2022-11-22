@@ -22,7 +22,7 @@ mysqli_query($dbcon, $sql);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>전체 공지 상세 - 롯데시네마</title>
     <link rel="stylesheet" type="text/css" href="../css/css_reset.css">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
     <link rel="stylesheet" type="text/css" href="../css/view.css">
@@ -52,7 +52,7 @@ mysqli_query($dbcon, $sql);
     <?php include "../inc/header.php"; ?>
     <main id="content" class="content">
         <div class="notice_view">
-            <h2>공지사항</h2>
+            <h2>전체 공지</h2>
             <?php if($s_id =="admin"){ ?>
             <p class="write_area">
                 <span><a href="write.php">[글쓰기]</a></span>

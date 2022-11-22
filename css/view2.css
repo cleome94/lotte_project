@@ -1,0 +1,117 @@
+
+.notice_view{
+    width:1000px;
+    margin:auto;
+    margin-top:225px;
+}
+.content section{
+    width:1000px;
+    margin:0 auto;
+}
+.notice_view h2{
+    font-size:24px;
+    font-weight:400;
+}
+.notice_list_set{
+    width:1000px;
+    position:relative;
+    margin-top:30px;
+}
+table, td{
+    border-collapse:collapse
+}
+.notice_list_title{
+    height:50px;
+    background:#eee;
+    border-top:1px solid #999;
+}
+.notice_list_title th{
+    font-size:16px;
+    font-weight:500;
+    text-align:left;
+    padding-left:10px;
+}
+.notice_view_content{
+    height:33px;
+    border-bottom:1px solid#999;
+}
+.notice_view_content td{
+    padding-left:10px;
+}
+.v_title{
+    color:#808080;
+    margin-right:10px;
+}
+.v_content{
+    margin-right:30px
+}
+.v_text{
+    padding:30px 10px;
+    border-bottom:1px solid#999;
+}
+.list{
+    width:1000px;
+    margin-top:50px;
+    text-align:center
+}
+.list a:nth-child(1){
+    display:inline-block;
+    width:120px;
+    height:50px;
+    padding-top:13px;
+    background:#d32f2f;
+    border-radius:6px;
+    box-sizing:border-box;
+    border:none;
+    font-size:16px;
+    color:#fff
+}
+.list a:nth-child(2){
+    display:inline-block;
+    width:120px;
+    height:50px;
+    padding-top:13px;
+    background:#2875ce;
+    border-radius:6px;
+    box-sizing:border-box;
+    border:none;
+    font-size:16px;
+    color:#fff;
+    margin-left:10px
+}
+.list a:nth-child(3){
+    display:inline-block;
+    width:120px;
+    height:50px;
+    padding-top:13px;
+    background:#393939;
+    border-radius:6px;
+    box-sizing:border-box;
+    border:none;
+    font-size:16px;
+    color:#fff;
+    margin-left:10px
+}
+.ad_wrap{
+    clear:both;
+    margin-top:100px;
+    background:url(../images/ad_bg.jpg) repeat-x bottom;
+}
+.ad{
+    width:1000px;
+    margin:0 auto
+}
+.banner_ad1{
+    display:block;
+    width:1000px;
+    height:244px;
+    background:url(../images/login/banner_ad01.jpg) no-repeat;
+    text-indent:-9999px
+}
+.banner_ad2{
+    display:block;
+    width:1000px;
+    height:244px;
+    background:url(../images/banner_ad.png) no-repeat;
+    text-indent:-9999px
+}

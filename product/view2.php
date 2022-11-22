@@ -46,7 +46,7 @@ $array = mysqli_fetch_array($result);
     <?php include "../inc/header.php"; ?>
     <main id="content" class="content">
         <div class="notice_view">
-            <h2>공지사항</h2>
+            <h2 class="blind"><?php echo $array["p_name"]; ?></h2>
             <?php if($s_id =="admin"){ ?>
             <p class="write_area">
                 <span><a href="write.php">[글쓰기]</a></span>
@@ -62,7 +62,8 @@ $array = mysqli_fetch_array($result);
                 </thead>
                 <tbody class="notice_view_content">
                     <tr>
-                        <td>
+                        <td><span class="v_title"><?php echo $array["s_price"] ?></span>
+                            <span class="v_content"><?php echo $array["f_price"] ?></span>
                             <span class="v_title">구성품</span>
                             <span class="v_content"><?php echo $array["com"]; ?></span>
                             <span class="v_title">구매제한</span>

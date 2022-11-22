@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>회원가입 - 롯데시네마</title>
     <link rel="stylesheet" type="text/css" href="../css/css_reset.css">
     <link rel="stylesheet" type="text/css" href="../css/css_join.css">
     <script src="../js/jquery-3.6.1.min.js"></script>
@@ -89,16 +89,11 @@
                                 <input type="text" name="birth" id="birth" class="birth" placeholder="생년월일 8자리를 입력해 주세요. ex) 20220101">
                             </label>              
                         </div>
-
                         <div class="phone_no">
                             <label>
                             <span class="form2_n6">휴대폰 번호</span>
                                 <input type="text" name="phone" id="phone" class="phone" placeholder="(' - '생략) 입력해 주세요.">
                             </label>
-                        </div>
-                        <div class="an">
-                            <button type="button" class="an_btn">인증번호 받기</button>
-                            <input type="text" name="ean" id="ean" class="ean" placeholder="인증번호를 입력해 주세요.">
                         </div>
                     <p class="cer2">- 휴대폰 본인확인 시 타인 명의를 도용할 경우, "정보통신망법 제 49조"에 의거하여 5년 이하의 징역 또는 5천만원 이하의 벌금에 처할 수 있습니다.</p>
                 </fieldset>

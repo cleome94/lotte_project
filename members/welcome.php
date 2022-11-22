@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가입완료</title>
+    <title>가입완료 - 롯데시네마</title>
     <link rel="stylesheet" type="text/css" href="../css/css_reset.css">
     <link rel="stylesheet" type="text/css" href="../css/css_welcome.css">
 </head>

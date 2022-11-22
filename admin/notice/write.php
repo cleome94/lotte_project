@@ -8,42 +8,16 @@ include "../inc/login_check.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지사항</title>
-    <style>
-        body{
-            width:1000px;
-            margin:0 auto;
-        }
-    </style>
-    <script type="text/javascript">
-        function notice_check(){
-            var sort = document.getElementById("sort")
-            var n_title = document.getElementById("n_title")
-            var n_content = document.getElementById("n_content")
+    <title>관리자 페이지 전체 공지 글쓰기 - 롯데시네마</title>
+    <link rel="stylesheet" type="text/css" href="../../css/body.css">
+    <script src="../../js/notice_write.js"></script>
 
-            if(!sort.value){
-                alert("구분을 입력하세요.");
-                sort.focus();
-                return false;
-            };
-            if(!n_title.value){
-                alert("제목을 입력하세요.");
-                n_title.focus();
-                return false;
-            };
-            if(!n_content.value){
-                alert("내용을 입력하세요.");
-                n_content.focus();
-                return false;
-            };
-        };
-    </script>
 </head>
 <body>
     <?php include "../inc/sub_header.html"; ?>
     <form name="notice_form" action="insert.php" method="post" enctype="multipart/form-data" onsubmit="return notice_check()">
         <fieldset>
-            <legend>공지사항</legend>
+            <legend>전체 공지</legend>
             <p>
                 작성자 <?php echo $s_name; ?>
             </p>

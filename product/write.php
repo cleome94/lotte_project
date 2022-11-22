@@ -102,7 +102,7 @@ include "../inc/admin_check.php";
             </p>
             <p>
                 <label for="validity">유효기간</label>
-                <input type="text" id="validity" name="validity" class="validity">
+                <input type="text" id="validity" name="validity" class="validity" size="40">
             </p>
             <p>
                 <label for="htu">사용방법</label>

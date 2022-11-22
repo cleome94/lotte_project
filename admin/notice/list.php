@@ -25,43 +25,9 @@ if($e_pageNum > $total_page){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            width:1000px;
-            margin:0 auto;
-        }
-        a{
-            text-decoration:none;
-            margin:0 5px
-        }
-        .total{
-                width:1000px;
-                display:flex;
-                justify-content:space-between
-        }
-        table{
-            width:1000px;
-            border-collapse: collapse;
-            border-spacing: 0;
-            font-size:14px;
-            text-align:center;
-        }
-        caption{
-            padding:10px;
-        }
-        th{
-            border-bottom: 1px solid #292929;
-            padding: 11px;
-        }
-        td{
-            border-bottom: 1px solid #ebebeb;
-            padding: 11px;
-        }
-        .pager{
-            text-align:center
-        }
-    </style>
+    <title>관리자 페이지 공지사항 목록 - 롯데시네마</title>
+    <link rel="stylesheet" type="text/css" href="../../css/body.css">
+    <link rel="stylesheet" type="text/css" href="../../css/admin_list.css">
     <script>
         function remove_notice(g_no){
             var ck = confirm("정말 삭제하시겠습니까?");

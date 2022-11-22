@@ -26,38 +26,9 @@ if($e_pageNum > $total_page){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>관리자페이지 회원관리</title>
-    <style>
-        body{
-            width:1000px;
-            margin:0 auto;
-        }
-        a{
-            text-decoration:none;
-            margin:0 5px
-        }
-        table, td{
-            border-collapse:collapse
-        }
-        th, td{
-            padding:15px
-        }
-        .mem_list_set{
-            width:1000px
-        }
-        .mem_list_title{
-            border-top:2px solid rgb(177, 177, 177);
-            border-bottom:1px solid rgb(177, 177, 177);
-            text-align:center
-        }
-        .mem_list_content{
-            border-bottom:1px solid rgb(177, 177, 177);
-            text-align:center
-        }
-        .pager{
-            text-align:center
-        }
-    </style>
+    <title>관리자페이지 회원관리 목록 - 롯데시네마</title>
+    <link rel="stylesheet" type="text/css" href="../../css/body.css">
+    <link rel="stylesheet" type="text/css" href="../../css/member_list.css">
     <script>
         function mem_del(g_no){
             var rtn_val = confirm("정말 삭제하시겠습니까?");

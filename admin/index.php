@@ -17,13 +17,9 @@ if($s_id != "admin"){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>관리자 페이지</title>
-    <style>
-        body{
-            width:1000px;
-            margin:0 auto;
-        }
-    </style>
+    <title>관리자 페이지 - 롯데시네마</title>
+    <link rel="stylesheet" type="text/css" href="../../css/body.css">
+    <link rel="stylesheet" type="text/css" href="../css/body.css">
 </head>
 <body>
     <h1>* 관리자 페이지 *</h1>

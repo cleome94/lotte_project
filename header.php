@@ -140,7 +140,7 @@
                     <h3 class="main_cs">고객센터</h3>
                     <ul>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">공지사항</a></li>
+                        <li><a href="notice/notice.php">공지사항</a></li>
                         <li><a href="#">1:1문의</a></li>
                         <li><a href="#">단체관람/대관문의</a></li>
                         <li><a href="#">분실물문의</a></li>

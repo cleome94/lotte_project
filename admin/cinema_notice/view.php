@@ -22,58 +22,9 @@ mysqli_query($dbcon, $sql);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            width:1000px;
-            margin:0 auto;
-        }
-        .write_area{
-            width:1000px;
-            display:flex;
-            flex-direction:row-reverse
-        }
-        .notice_list_set{
-            width:1000px;
-            position:relative;
-            margin-top:30px;
-        }
-        table, td{
-            border-collapse:collapse
-        }
-        .notice_list_title{
-            height:50px;
-            background:#eee;
-            border-top:1px solid #999;
-        }
-        .notice_list_title th{
-            font-size:16px;
-            font-weight:500;
-            text-align:left;
-            padding-left:10px;
-        }
-        .notice_view_content{
-            height:33px;
-            border-bottom:1px solid#999;
-        }
-        .notice_view_content td{
-            padding-left:10px;
-        }
-        .v_title{
-            color:#808080;
-            margin-right:10px;
-        }
-        .v_content{
-            margin-right:30px
-        }
-        .v_text{
-            padding:30px 10px;
-            border-bottom:1px solid#999;
-        }
-        .list{
-            text-align:center;
-        }
-    </style>
+    <title>관리자 페이지 영화관 공지 상세 - 롯데시네마</title>
+    <link rel="stylesheet" type="text/css" href="../../css/body.css">
+    <link rel="stylesheet" type="text/css" href="../../css/admin_view.css">
     <script>
         function remove_notice(){
             var ck = confirm("정말 삭제하시겠습니까?");
@@ -86,7 +37,7 @@ mysqli_query($dbcon, $sql);
 <body>
     <?php include "../inc/sub_header.html"; ?>
 
-    <h2>공지사항</h2>
+    <h2>영화관 공지</h2>
     <p class="write_area">
         <span><a href="write.php">[글쓰기]</a></span>
     </p>
@@ -151,7 +102,7 @@ mysqli_query($dbcon, $sql);
             </tr>
         </table>
         <p class="list">
-            <a href="list.php">목록</a>
+            <a href="list.php">[목록]</a>
             <a href="modify.php?n_idx=<?php echo $n_idx; ?>">[수정]</a>
             <a href="#" onclick="remove_notice()">[삭제]</a>
         </p>
