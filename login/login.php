@@ -56,7 +56,7 @@ $total = mysqli_num_rows($result);
                 </form>
                 </div>
                 <div class="join">
-                    <a class="join01" href="../join.php">회원가입</a>
+                    <a class="join01" href="../members/join.php">회원가입</a>
                     <a class="join02" href="#">아이디 찾기</a>
                     <a class="join03" href="#">비밀번호 찾기</a>
                 </div>
@@ -72,7 +72,7 @@ $total = mysqli_num_rows($result);
                     <span class="nmb1_line"></span>
                     <h2 class="blind">비회원 로그인</h2>
                     <p class="txt2">· 비회원 로그인 시 예매 및 예매확인/취소 메뉴만 이용 가능하며 관람권, 할인권을 포함한 기타 결제, 할인수단은 정회원 로그인 시 사용 가능 합니다.</p>
-                    <form class="form1_wrap" action="insert.php" method="post" onsubmit="return form_check()">
+                    <form class="form1_wrap" action="non_member_insert.php" method="post" onsubmit="return form_check()">
                         <fieldset class="form1">
                             <legend class="blind">비회원 정보</legend>
                             <div class="name_wrap">
@@ -85,19 +85,19 @@ $total = mysqli_num_rows($result);
                                 <input type="text" name="birth" id="birth" class="birth" placeholder="생년월일 8자리를 입력해 주세요."></label>
                             </div>
 
-                            <div class="pn_wrap">
+                            <div class="mobile_wrap">
                                 <label><span>휴대폰 번호</span>
-                                <input type="text" name="pn" id="pn" class="pn" placeholder="휴대폰 번호(-생략)를 입력해 주세요."></label>
+                                <input type="text" name="mobile" id="mobile" class="mobile" placeholder="휴대폰 번호(-생략)를 입력해 주세요."></label>
                             </div>
 
-                            <div class="rp1_wrap">
+                            <div class="t_pwd_wrap">
                                 <label><span>예매 비밀번호</span>
-                                <input type="password" name="rp1" id="rp1" class="rp1" placeholder="예매 비밀번호(4자리)를 입력해 주세요."></label>
+                                <input type="password" name="t_pwd" id="t_pwd" class="t_pwd" placeholder="예매 비밀번호(4자리)를 입력해 주세요."></label>
                             </div>
 
-                            <div class="rp2_wrap">
+                            <div class="t_repwd_wrap">
                                 <label><span>예매 비밀번호 확인</span>
-                                <input type="password" name="rp2" id="rp2" class="rp2" placeholder="예매 비밀번호(4자리)를 재입력해 주세요."></label>
+                                <input type="password" name="t_repwd" id="t_repwd" class="t_repwd" placeholder="예매 비밀번호(4자리)를 재입력해 주세요."></label>
                             </div>
                         </fieldset>
                         <a class="ad4" href="#">광고</a>
@@ -135,7 +135,7 @@ $total = mysqli_num_rows($result);
                     <span class="nmb2_line"></span>
                     <h2 class="blind">비회원 예매 확인</h2>
                     <p class="txt2">· 비회원 로그인 시 예매 및 예매확인/취소 메뉴만 이용 가능하며 관람권, 할인권을 포함한 기타 결제, 할인수단은 정회원 로그인 시 사용 가능 합니다.</p>
-                    <form class="form2_wrap" action="insert.php" method="post" onsubmit="return form_check()">
+                    <form class="form2_wrap" action="non_member_login_ok.php" method="post" onsubmit="return form_check()">
                         <fieldset class="form2">
                             <legend class="blind">비회원 예매 정보</legend>
                             <div class="name3_wrap">

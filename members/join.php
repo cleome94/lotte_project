@@ -60,7 +60,7 @@
                     <div class="id">
                         <label>
                             <span>아이디</span>
-                            <input type="text" name="u_id", id="u_id" class="u_id" placeholder="4~12자의 영문 대소문자와 숫자로 입력해 주세요.">
+                            <input type="text" name="u_id", id="u_id" class="u_id" placeholder="4~12자의 영문 대소문자와 숫자로 입력해 주세요." value="<?php echo $u_id; ?>">
                         </label>
                         <button type="button" class="id_btn" onclick="id_search()">중복 확인</button>
 

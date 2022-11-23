@@ -43,9 +43,9 @@ $(function(){
     $(".nmb1_btn").on("click",function(){
         let name = $(".name").val();
         let birth = $(".birth").val();
-        let pn = $(".pn").val();
-        let rp1 = $(".rp1").val();
-        let rp2 = $(".rp2").val();
+        let mobile = $(".mobile").val();
+        let t_pwd = $(".t_pwd").val();
+        let t_repwd = $(".t_repwd").val();
         if(name == ""){
             alert("이름을 입력해 주세요.");
             return false;
@@ -64,29 +64,29 @@ $(function(){
             alert("생년월일 8자리를 형식에 맞게 입력해 주세요.");
             return false;
         };
-        if(pn == ""){
+        if(mobile == ""){
             alert("휴대폰번호를 입력해 주세요.");
             return false;
         }
-        var regExp = /(^02.{0}^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/g;
-        if(!regExp.test(pn)){
+        var regExp = /^[0-9]{9,11}/g;
+        if(!regExp.test(mobile)){
             alert("올바른 휴대폰번호를 입력해 주세요.");
             return false;
         };
-        if(rp1 == ""){
+        if(t_pwd == ""){
             alert("예매 비밀번호를 입력해 주세요.");
             return false;
         };
         var regExp = /^[0-9]{4}$/g;
-        if(!regExp.test(rp1)){
+        if(!regExp.test(t_pwd)){
             alert("예매 비밀번호를 형식에 맞게 입력해 주세요.");
             return false;
         };
-        if(rp2 == ""){
+        if(t_repwd == ""){
             alert("예매 비밀번호를 재입력해 주세요.");
             return false;
         };
-        if(rp1 != rp2){
+        if(t_pwd != t_repwd){
             alert("예매 비밀번호가 일치하지 않습니다.");
             return false;
         };

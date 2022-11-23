@@ -275,33 +275,33 @@ input[type="checkbox"]:checked {
     width:320px;
     height:36px
 }
-.pn_wrap{
+.mobile_wrap{
     margin-bottom:8px
 }
-.pn_wrap span{
+.mobile_wrap span{
     position:relative;
     left:-5px
 }
-.pn{
+.mobile{
     width:320px;
     height:36px
 }
-.rp1_wrap{
+.t_pwd_wrap{
     margin-bottom:8px
 }
-.rp1_wrap span{
+.t_pwd_wrap span{
     position:relative;
     left:-5px
 }
-.rp1{
+.t_pwd{
     width:320px;
     height:36px
 }
-.rp2_wrap span{
+.t_repwd_wrap span{
     position:relative;
     left:-5px
 }
-.rp2{
+.t_repwd{
     width:320px;
     height:36px
 }

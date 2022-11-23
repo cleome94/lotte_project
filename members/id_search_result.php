@@ -21,7 +21,12 @@ $num = mysqli_num_rows($result);
     <title>"<?php echo $u_id; ?>"검색 결과 - 롯데시네마</title>
     <link rel="stylesheet" type="text/css" href="../css/css_reset.css">
     <link rel="stylesheet" type="text/css" href="../css/id_search_result.css">
-    <script src="../js/id_search_result.js"></script>
+    <script type="text/javascript">
+        function return_id(){
+            opener.document.getElementById("u_id").value = "<?php echo $u_id; ?>";        // <=== <?php echo $u_id; ?> '사용자가 입력한 아이디' 어디에 넣든 사용할 수 있음 <title>, <html> 등등
+            window.close();
+        };
+    </script>
 
 </head>
 <body>

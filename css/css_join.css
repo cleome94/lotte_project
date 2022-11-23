@@ -1,5 +1,6 @@
 .wrap{
-    min-width:1000px
+    min-width:1000px;
+    overflow-x:hidden;
 }
 .header{
     height:135px;
@@ -350,7 +351,7 @@ input[type="checkbox"]:checked {
     cursor:pointer
 }
 .cancle{
-    background:#3f3f3f;
+    background:#54585a;
     color:#fff;
     margin-top:80px;
     margin-left:320px

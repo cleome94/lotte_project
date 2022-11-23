@@ -1,3 +1,6 @@
+.main_image{
+    overflow-x:hidden;
+}
 .main_bg{
     background:#000;
     width:100%;
