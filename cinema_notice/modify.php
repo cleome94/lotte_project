@@ -16,10 +16,15 @@ mysqli_close($dbcon);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>영화관 공지 수정 - 롯데시네마</title>
-    <link rel="stylesheet" type="text/css" href="../css/body.css">
+    <link rel="stylesheet" type="text/css" href="../css/css_reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/modify.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <script src="../js/jquery-3.6.1.min.js"></script>
     <script src="../js/cinema_notice_write.js"></script>
 </head>
 <body>
+<?php include "../inc/header.php"; ?>
 <form name="cinema_notice_form" action="edit.php?n_idx=<?php echo $n_idx; ?>" method="post" enctype="multipart/form-data" onsubmit="return notice_check()">
         <fieldset>
             <legend>영화관 공지</legend>
@@ -58,5 +63,6 @@ mysqli_close($dbcon);
             </p>
         </fieldset>
     </form>
+    <?php include "../inc/footer.php"; ?>
 </body>
 </html>

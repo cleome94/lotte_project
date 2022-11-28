@@ -44,7 +44,8 @@ td input{
     box-sizing:border-box;
     font-size:14px;
     font-weight:bold;
-    color:#fff
+    color:#fff;
+    cursor:pointer
 }
 .btn button:nth-child(1){
     background:#3f3f3f;

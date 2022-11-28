@@ -19,9 +19,14 @@ $sql .= "t_pwd, reg_date";
 $sql .= ") values(";
 $sql .= "'$u_name', '$birth', '$mobile',";
 $sql .= "'$t_pwd', '$reg_date');";
-echo $sql;
+/* echo $sql; */
 mysqli_query($dbcon, $sql);
 mysqli_close($dbcon);
+echo"
+<script type=\"text/javascript\">
+alert(\"로그인 되었습니다.\");
+</script>
+";
 echo"
     <script type=\"text/javascript\">
         location.href=\"../index.php\";

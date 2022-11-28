@@ -252,7 +252,6 @@
                     <li class="top_menu6"><a href="#" onclick="logout()">로그아웃</a></li>
                 </ul>
             <?php }; ?>
-
         </div>
 
         <div class="sns">

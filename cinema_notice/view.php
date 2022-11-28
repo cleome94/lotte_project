@@ -98,7 +98,7 @@ mysqli_query($dbcon, $sql);
                         </td>
                     </tr>
                 </tbody>
-                <tr class="notice_view_content">
+                <tr>
                     <td colspan="2" class="v_text">
                     <?php
                     if($array["f_name"] && substr($array["f_type"], 0, 5) == "image"){

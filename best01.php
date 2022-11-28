@@ -22,7 +22,7 @@ $total = mysqli_num_rows($result);
 
     </script>
 </head>
-<body>
+<body onload="init();">
     <div class="wrap">
     <?php include "header.php"; ?>
 
