@@ -11,7 +11,7 @@ include "../inc/admin_check.php";
     <title>영화관 공지 글쓰기 - 롯데시네마</title>
     <link rel="stylesheet" type="text/css" href="../css/css_reset.css">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../css/write.css">
+    <link rel="stylesheet" type="text/css" href="../css/cinema_notice_write.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <script src="../js/jquery-3.6.1.min.js"></script>
     <script src="../js/cinema_notice_write.js"></script>
@@ -19,14 +19,17 @@ include "../inc/admin_check.php";
 </head>
 <body>
     <?php include "../inc/header.php"; ?>
+    <h2 class="notice">공지사항</h2>
     <form name="cinema_notice_form" action="insert.php" method="post" enctype="multipart/form-data" onsubmit="return notice_check()">
         <fieldset>
             <legend>영화관 공지</legend>
-            <p>
-                작성자 <?php echo $s_name; ?>
+            <p class="writer">
+            <span>작성자</span> <?php echo $s_name; ?>
+            </p>
+            <p class="sort">
+                <label for="cate">구분</label>
             </p>
             <p>
-                <label for="cate">구분</label>
                 <select name="cate" id="cate" class="cate">
                     <option value="b">서울</option>
                     <option value="c">경기/인천</option>
@@ -38,22 +41,23 @@ include "../inc/admin_check.php";
                     <option value="i">제주</option>
                 </select>
             </p>
-            <p>
-                <label for="n_title">제목</label>
-                <input type="text" id="n_title" name="n_title" class="n_title" size="90">
-            </p>
-            <p>
-                <label for="n_content">내용</label>
-                <textarea cols="100" rows="30" id="n_content" name="n_content" class="n_content"></textarea>
-            </p>
-            <p>
-                <label for="up_file">파일첨부</label>
+
+            <p class="title"><label for="n_title">제목</label></p>
+            <p><input type="text" id="n_title" name="n_title" class="n_title"></p>
+            
+            <p class="content">
+                <label for="n_content">내용</label></p>
+            <p><textarea id="n_content" name="n_content" class="n_content"></textarea></p>
+            
+            <p class="upload">
+                <label for="up_file" class="file">파일 첨부</label>
+                <input type="text" class="upload_name" value="첨부파일" placeholder="첨부파일" readonly>
                 <input type="file" name="up_file" id="up_file">
             </p>
-            <p>
-                <button type="button" onclick="history.back()">이전 페이지</button>
-                <button type="submit">등록하기</button>
-            </p>
+            <div class="btn">
+                <button class="back_btn" type="button" onclick="history.back()">이전 페이지</button>
+                <button class="ok_btn" type="submit">등록하기</button>
+            </div>
         </fieldset>
     </form>
     <?php include "../inc/footer.php"; ?>

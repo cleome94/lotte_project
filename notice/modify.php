@@ -17,39 +17,38 @@ mysqli_close($dbcon);
     <title>전체 공지 수정 - 롯데시네마</title>
     <link rel="stylesheet" type="text/css" href="../css/css_reset.css">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../css/modify.css">
+    <link rel="stylesheet" type="text/css" href="../css/notice_modify.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <script src="../js/jquery-3.6.1.min.js"></script>
     <script src="../js/notice_write.js"></script>
 </head>
 <body>
 <?php include "../inc/header.php"; ?>
+<h2 class="notice">공지사항</h2>
 <form name="notice_form" action="edit.php?n_idx=<?php echo $n_idx; ?>" method="post" enctype="multipart/form-data" onsubmit="return notice_check()">
         <fieldset>
             <legend>전체 공지</legend>
-            <p>
-                작성자 <?php echo $s_name; ?>
+            <p class="writer">
+                <span>작성자</span> <?php echo $s_name; ?>
             </p>
-            <p>
-                <label for="sort">구분</label>
-                <input type="text" id="sort" name="sort" class="sort" value="<?php echo $array["sort"]; ?>">
-            </p>
-            <p>
-                <label for="n_title">제목</label>
-                <input type="text" id="n_title" name="n_title" class="n_title" size="90" value="<?php echo $array["n_title"]; ?>">
-            </p>
-            <p>
-                <label for="n_content">내용</label>
-                <textarea cols="100" rows="30" id="n_content" name="n_content" class="n_content"><?php echo $array["n_content"]; ?></textarea>
-            </p>
-            <p>
-                <label for="up_file">첨부파일 [<?php echo $array["f_name"]; ?>]</label>
+            <p class="cate"><label for="sort">구분</label></p>
+            <p><input type="text" id="sort" name="sort" class="sort" value="<?php echo $array["sort"]; ?>"></p>
+            
+            <p class="title"><label for="n_title">제목</label></p>
+            <p><input type="text" id="n_title" name="n_title" class="n_title"value="<?php echo $array["n_title"]; ?>"></p>
+            
+            <p class="content"><label for="n_content">내용</label></p>
+            <p><textarea id="n_content" name="n_content" class="n_content"><?php echo $array["n_content"]; ?></textarea></p>
+            
+            <p class="upload">
+                <label for="up_file" class="file">첨부파일 [<?php echo $array["f_name"]; ?>]</label>
+                <input type="text" class="upload_name" value="첨부파일" placeholder="첨부파일" readonly>
                 <input type="file" name="up_file" id="up_file">
             </p>
-            <p>
-                <button type="button" onclick="history.back()">이전 페이지</button>
-                <button type="submit">수정하기</button>
-            </p>
+            <div class="btn">
+                <button class="back_btn" type="button" onclick="history.back()">이전 페이지</button>
+                <button class="ok_btn" type="submit">수정하기</button>
+            </div>
         </fieldset>
     </form>
     <?php include "../inc/footer.php"; ?>

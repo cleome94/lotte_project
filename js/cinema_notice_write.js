@@ -10,6 +10,11 @@ $(function(){
       $(".exit").click(function(){
           $(".main_menu_wrap").hide();
       });
+
+      $("#up_file").on('change',function(){
+        var fileName = $("#up_file").val();
+        $(".upload_name").val(fileName);
+      });
 });
 function logout(){
   var ck = confirm("로그아웃 하시겠습니까?");
